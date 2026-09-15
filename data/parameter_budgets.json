@@ -1,0 +1,798 @@
+{
+  "cells": [
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "method": "lp",
+      "classes": 47,
+      "text_rank": 46,
+      "parameters": 24111,
+      "rank": null
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "method": "lpplusplus",
+      "classes": 47,
+      "text_rank": 46,
+      "parameters": 24158,
+      "rank": null
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "method": "proker",
+      "classes": 47,
+      "text_rank": 46,
+      "parameters": null,
+      "rank": null
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "method": "full",
+      "classes": 47,
+      "text_rank": 46,
+      "parameters": 393216,
+      "rank": null
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "method": "lora_same_rank",
+      "classes": 47,
+      "text_rank": 46,
+      "parameters": 58880,
+      "rank": 46
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "method": "lora_near_budget",
+      "classes": 47,
+      "text_rank": 46,
+      "parameters": 35840,
+      "rank": 28
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "method": "svd",
+      "classes": 47,
+      "text_rank": 46,
+      "parameters": 512,
+      "rank": null
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "method": "comp",
+      "classes": 47,
+      "text_rank": 46,
+      "parameters": 2496,
+      "rank": 2
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "method": "comp_same_rank",
+      "classes": 47,
+      "text_rank": 46,
+      "parameters": 57408,
+      "rank": 46
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "method": "comp_near_budget",
+      "classes": 47,
+      "text_rank": 46,
+      "parameters": 34944,
+      "rank": 28
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "method": "p0",
+      "classes": 47,
+      "text_rank": 46,
+      "parameters": 35328,
+      "rank": 46
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "method": "lp",
+      "classes": 10,
+      "text_rank": 9,
+      "parameters": 5130,
+      "rank": null
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "method": "lpplusplus",
+      "classes": 10,
+      "text_rank": 9,
+      "parameters": 5140,
+      "rank": null
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "method": "proker",
+      "classes": 10,
+      "text_rank": 9,
+      "parameters": null,
+      "rank": null
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "method": "full",
+      "classes": 10,
+      "text_rank": 9,
+      "parameters": 393216,
+      "rank": null
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "method": "lora_same_rank",
+      "classes": 10,
+      "text_rank": 9,
+      "parameters": 11520,
+      "rank": 9
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "method": "lora_near_budget",
+      "classes": 10,
+      "text_rank": 9,
+      "parameters": 6400,
+      "rank": 5
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "method": "svd",
+      "classes": 10,
+      "text_rank": 9,
+      "parameters": 512,
+      "rank": null
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "method": "comp",
+      "classes": 10,
+      "text_rank": 9,
+      "parameters": 2496,
+      "rank": 2
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "method": "comp_same_rank",
+      "classes": 10,
+      "text_rank": 9,
+      "parameters": 11232,
+      "rank": 9
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "method": "comp_near_budget",
+      "classes": 10,
+      "text_rank": 9,
+      "parameters": 7488,
+      "rank": 6
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "method": "p0",
+      "classes": 10,
+      "text_rank": 9,
+      "parameters": 6912,
+      "rank": 9
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "method": "lp",
+      "classes": 37,
+      "text_rank": 36,
+      "parameters": 18981,
+      "rank": null
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "method": "lpplusplus",
+      "classes": 37,
+      "text_rank": 36,
+      "parameters": 19018,
+      "rank": null
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "method": "proker",
+      "classes": 37,
+      "text_rank": 36,
+      "parameters": null,
+      "rank": null
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "method": "full",
+      "classes": 37,
+      "text_rank": 36,
+      "parameters": 393216,
+      "rank": null
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "method": "lora_same_rank",
+      "classes": 37,
+      "text_rank": 36,
+      "parameters": 46080,
+      "rank": 36
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "method": "lora_near_budget",
+      "classes": 37,
+      "text_rank": 36,
+      "parameters": 28160,
+      "rank": 22
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "method": "svd",
+      "classes": 37,
+      "text_rank": 36,
+      "parameters": 512,
+      "rank": null
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "method": "comp",
+      "classes": 37,
+      "text_rank": 36,
+      "parameters": 2496,
+      "rank": 2
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "method": "comp_same_rank",
+      "classes": 37,
+      "text_rank": 36,
+      "parameters": 44928,
+      "rank": 36
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "method": "comp_near_budget",
+      "classes": 37,
+      "text_rank": 36,
+      "parameters": 27456,
+      "rank": 22
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "method": "p0",
+      "classes": 37,
+      "text_rank": 36,
+      "parameters": 27648,
+      "rank": 36
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "method": "lp",
+      "classes": 397,
+      "text_rank": 396,
+      "parameters": 203661,
+      "rank": null
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "method": "lpplusplus",
+      "classes": 397,
+      "text_rank": 396,
+      "parameters": 204058,
+      "rank": null
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "method": "proker",
+      "classes": 397,
+      "text_rank": 396,
+      "parameters": null,
+      "rank": null
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "method": "full",
+      "classes": 397,
+      "text_rank": 396,
+      "parameters": 393216,
+      "rank": null
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "method": "lora_same_rank",
+      "classes": 397,
+      "text_rank": 396,
+      "parameters": 506880,
+      "rank": 396
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "method": "lora_near_budget",
+      "classes": 397,
+      "text_rank": 396,
+      "parameters": 304640,
+      "rank": 238
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "method": "svd",
+      "classes": 397,
+      "text_rank": 396,
+      "parameters": 512,
+      "rank": null
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "method": "comp",
+      "classes": 397,
+      "text_rank": 396,
+      "parameters": 2496,
+      "rank": 2
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "method": "comp_same_rank",
+      "classes": 397,
+      "text_rank": 396,
+      "parameters": 494208,
+      "rank": 396
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "method": "comp_near_budget",
+      "classes": 397,
+      "text_rank": 396,
+      "parameters": 304512,
+      "rank": 244
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "method": "p0",
+      "classes": 397,
+      "text_rank": 396,
+      "parameters": 304128,
+      "rank": 396
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "method": "lp",
+      "classes": 47,
+      "text_rank": 46,
+      "parameters": 36143,
+      "rank": null
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "method": "lpplusplus",
+      "classes": 47,
+      "text_rank": 46,
+      "parameters": 36190,
+      "rank": null
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "method": "proker",
+      "classes": 47,
+      "text_rank": 46,
+      "parameters": null,
+      "rank": null
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "method": "full",
+      "classes": 47,
+      "text_rank": 46,
+      "parameters": 589824,
+      "rank": null
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "method": "lora_same_rank",
+      "classes": 47,
+      "text_rank": 46,
+      "parameters": 70656,
+      "rank": 46
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "method": "lora_near_budget",
+      "classes": 47,
+      "text_rank": 46,
+      "parameters": 35328,
+      "rank": 23
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "method": "svd",
+      "classes": 47,
+      "text_rank": 46,
+      "parameters": 768,
+      "rank": null
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "method": "comp",
+      "classes": 47,
+      "text_rank": 46,
+      "parameters": 7616,
+      "rank": 2
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "method": "comp_same_rank",
+      "classes": 47,
+      "text_rank": 46,
+      "parameters": 175168,
+      "rank": 46
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "method": "comp_near_budget",
+      "classes": 47,
+      "text_rank": 46,
+      "parameters": 34272,
+      "rank": 9
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "method": "p0",
+      "classes": 47,
+      "text_rank": 46,
+      "parameters": 35328,
+      "rank": 46
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "method": "lp",
+      "classes": 10,
+      "text_rank": 9,
+      "parameters": 7690,
+      "rank": null
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "method": "lpplusplus",
+      "classes": 10,
+      "text_rank": 9,
+      "parameters": 7700,
+      "rank": null
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "method": "proker",
+      "classes": 10,
+      "text_rank": 9,
+      "parameters": null,
+      "rank": null
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "method": "full",
+      "classes": 10,
+      "text_rank": 9,
+      "parameters": 589824,
+      "rank": null
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "method": "lora_same_rank",
+      "classes": 10,
+      "text_rank": 9,
+      "parameters": 13824,
+      "rank": 9
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "method": "lora_near_budget",
+      "classes": 10,
+      "text_rank": 9,
+      "parameters": 6144,
+      "rank": 4
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "method": "svd",
+      "classes": 10,
+      "text_rank": 9,
+      "parameters": 768,
+      "rank": null
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "method": "comp",
+      "classes": 10,
+      "text_rank": 9,
+      "parameters": 7616,
+      "rank": 2
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "method": "comp_same_rank",
+      "classes": 10,
+      "text_rank": 9,
+      "parameters": 34272,
+      "rank": 9
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "method": "comp_near_budget",
+      "classes": 10,
+      "text_rank": 9,
+      "parameters": 7616,
+      "rank": 2
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "method": "p0",
+      "classes": 10,
+      "text_rank": 9,
+      "parameters": 6912,
+      "rank": 9
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "method": "lp",
+      "classes": 37,
+      "text_rank": 36,
+      "parameters": 28453,
+      "rank": null
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "method": "lpplusplus",
+      "classes": 37,
+      "text_rank": 36,
+      "parameters": 28490,
+      "rank": null
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "method": "proker",
+      "classes": 37,
+      "text_rank": 36,
+      "parameters": null,
+      "rank": null
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "method": "full",
+      "classes": 37,
+      "text_rank": 36,
+      "parameters": 589824,
+      "rank": null
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "method": "lora_same_rank",
+      "classes": 37,
+      "text_rank": 36,
+      "parameters": 55296,
+      "rank": 36
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "method": "lora_near_budget",
+      "classes": 37,
+      "text_rank": 36,
+      "parameters": 27648,
+      "rank": 18
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "method": "svd",
+      "classes": 37,
+      "text_rank": 36,
+      "parameters": 768,
+      "rank": null
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "method": "comp",
+      "classes": 37,
+      "text_rank": 36,
+      "parameters": 7616,
+      "rank": 2
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "method": "comp_same_rank",
+      "classes": 37,
+      "text_rank": 36,
+      "parameters": 137088,
+      "rank": 36
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "method": "comp_near_budget",
+      "classes": 37,
+      "text_rank": 36,
+      "parameters": 26656,
+      "rank": 7
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "method": "p0",
+      "classes": 37,
+      "text_rank": 36,
+      "parameters": 27648,
+      "rank": 36
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "method": "lp",
+      "classes": 397,
+      "text_rank": 396,
+      "parameters": 305293,
+      "rank": null
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "method": "lpplusplus",
+      "classes": 397,
+      "text_rank": 396,
+      "parameters": 305690,
+      "rank": null
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "method": "proker",
+      "classes": 397,
+      "text_rank": 396,
+      "parameters": null,
+      "rank": null
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "method": "full",
+      "classes": 397,
+      "text_rank": 396,
+      "parameters": 589824,
+      "rank": null
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "method": "lora_same_rank",
+      "classes": 397,
+      "text_rank": 396,
+      "parameters": 608256,
+      "rank": 396
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "method": "lora_near_budget",
+      "classes": 397,
+      "text_rank": 396,
+      "parameters": 304128,
+      "rank": 198
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "method": "svd",
+      "classes": 397,
+      "text_rank": 396,
+      "parameters": 768,
+      "rank": null
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "method": "comp",
+      "classes": 397,
+      "text_rank": 396,
+      "parameters": 7616,
+      "rank": 2
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "method": "comp_same_rank",
+      "classes": 397,
+      "text_rank": 396,
+      "parameters": 1507968,
+      "rank": 396
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "method": "comp_near_budget",
+      "classes": 397,
+      "text_rank": 396,
+      "parameters": 304640,
+      "rank": 80
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "method": "p0",
+      "classes": 397,
+      "text_rank": 396,
+      "parameters": 304128,
+      "rank": 396
+    }
+  ],
+  "count_definition": "Optimized adaptation scalars; frozen quantities excluded",
+  "proker_solved_coefficients": "10*K*C^2"
+}
