@@ -94,13 +94,13 @@ Only $A\in\mathbb{R}^{d\times r}$ is trained, starting at zero. CLIP supplies it
 
 Class texts are promoted to FP64 before centering and reduced SVD. Singular vectors are retained when $\sigma_i>\max(e,C)\epsilon_{64}\sigma_1$. Each basis column is signed so that its largest-magnitude entry is positive. The basis remains fixed throughout training.
 
-Define $u_0=z_0Q$, $R=Q^\top T_\Delta$ and $q_0=\|z_0-u_0Q^\top\|_2^2$. The compact centered scores are
+Define $u_0=z_0Q$, $R=Q^\top T_\Delta$ and $q_0=\lVert z_0-u_0Q^\top\rVert_2^2$. The compact centered scores are
 
 $$
-s(h)=\tau\,\frac{(u_0+hA)R}{\sqrt{\|u_0+hA\|_2^2+q_0}}.
+s(h)=\tau \frac{(u_0+hA)R}{\sqrt{\lVert u_0+hA\rVert_2^2+q_0}}.
 $$
 
-Centering removes a shared class-logit offset, preserving softmax probabilities and the predicted class. The denominator retains the native perpendicular energy. Training minimizes support cross-entropy plus $\lambda\|A\|_F^2$. The exported adapter materializes the endpoint increment for prediction.
+Centering removes a shared class-logit offset, preserving softmax probabilities and the predicted class. The denominator retains the native perpendicular energy. Training minimizes support cross-entropy plus $\lambda\lVert A\rVert_F^2$. The exported adapter materializes the endpoint increment for prediction.
 
 ## Experimental protocol
 
@@ -195,7 +195,7 @@ $$
 hA_UU^\top T_\Delta=hGR.
 $$
 
-R0 optimizes $A_U$ with penalty $\|A_U\|_F^2$. R1 optimizes $A_U$ with penalty $\|G\|_F^2$. R2 directly optimizes $G$ with that penalty and obtains $A_U$ by a linear solve. The random basis uses seed 8675309. Its native perpendicular score term is retained, and each model uses its actual dynamic denominator.
+R0 optimizes $A_U$ with penalty $\lVert A_U\rVert_F^2$. R1 optimizes $A_U$ with penalty $\lVert G\rVert_F^2$. R2 directly optimizes $G$ with that penalty and obtains $A_U$ by a linear solve. The random basis uses seed 8675309. Its native perpendicular score term is retained, and each model uses its actual dynamic denominator.
 
 | Encoder | Dataset / shot | P0 | R0 | R1 | R2 |
 | --- | --- | ---: | ---: | ---: | ---: |
@@ -221,7 +221,7 @@ The fixed-configuration results show the same direction of improvement from R0 t
 
 ### Normalization and regularization
 
-D uses the current adapted feature norm; F fixes the denominator to $\|z_0\|_2$ for each image or view. Disp. uses $\lambda\|A\|_F^2$. CI uses $\lambda\|AR\|_F^2/\gamma$, where $\gamma=\|R\|_F^2/r$. All entries use the nine-candidate validation search.
+D uses the current adapted feature norm; F fixes the denominator to $\lVert z_0\rVert_2$ for each image or view. Disp. uses $\lambda\lVert A\rVert_F^2$. CI uses $\lambda\lVert AR\rVert_F^2/\gamma$, where $\gamma=\lVert R\rVert_F^2/r$. All entries use the nine-candidate validation search.
 
 | Encoder | Dataset / shot | P0: D/Disp. | D/CI | F/CI | F/Disp. | Random |
 | --- | --- | ---: | ---: | ---: | ---: | ---: |
@@ -296,9 +296,9 @@ The [recorded results](data/paper_results.json) contain all 522 per-seed main-ta
 
 ### ProLIP and LoRA
 
-ProLIP learns a zero-initialized full increment at the P0 interface with penalty $\lambda\|\Delta W\|_F^2$.
+ProLIP learns a zero-initialized full increment at the P0 interface with penalty $\lambda\lVert \Delta W\rVert_F^2$.
 
-LoRA learns $\Delta W=BC$, with $B\in\mathbb{R}^{d\times k}$ and $C\in\mathbb{R}^{k\times e}$, scale one and dropout zero. Both factors are trained. $B$ starts at zero; $C$ is uniform on $[-1/\sqrt e,1/\sqrt e]$, seeded by the support seed. The penalty is $\lambda\|BC\|_F^2$.
+LoRA learns $\Delta W=BC$, with $B\in\mathbb{R}^{d\times k}$ and $C\in\mathbb{R}^{k\times e}$, scale one and dropout zero. Both factors are trained. $B$ starts at zero; $C$ is uniform on $[-1/\sqrt e,1/\sqrt e]$, seeded by the support seed. The penalty is $\lambda\lVert BC\rVert_F^2$.
 
 ### SVD-E and Comp-E
 
@@ -306,7 +306,7 @@ SVD-E implements singular-value tuning from [CLIP-SVD](https://openreview.net/fo
 
 $$
 \Delta W=U\operatorname{diag}(\delta s)V^\top,\qquad
-\mathcal{R}=\lambda\|\delta s\|_2^2.
+\mathcal{R}=\lambda\lVert \delta s\rVert_2^2.
 $$
 
 Comp-E implements complementary-subspace adaptation from [Comp-LoRA](https://doi.org/10.1109/ICASSP55912.2026.11461843). It removes the leading $p=16$ directions from complete rectangular left and right singular bases, retaining complementary bases $U_c,V_c$, including rectangular nullspaces:
@@ -317,7 +317,7 @@ B\in\mathbb{R}^{(d_c-p)\times k},\quad
 A\in\mathbb{R}^{k\times(e_c-p)}.
 $$
 
-$B$ starts at zero; $A$ is uniform on $[-1/\sqrt{e_c-p},1/\sqrt{e_c-p}]$, seeded by the support seed. Both factors are trained with penalty $\lambda\|BA\|_F^2$. SigLIP 2 FC2 bias and residual remain fixed.
+$B$ starts at zero; $A$ is uniform on $[-1/\sqrt{e_c-p},1/\sqrt{e_c-p}]$, seeded by the support seed. Both factors are trained with penalty $\lambda\lVert BA\rVert_F^2$. SigLIP 2 FC2 bias and residual remain fixed.
 
 ### LP and LP++
 
@@ -326,10 +326,10 @@ LP Base and LP++ use the first cached, normalized view of each support image.
 LP fits a linear classifier and unregularized bias in FP64:
 
 $$
-\frac{1}{N}\sum_i\mathrm{CE}(Wx_i+b,y_i)+\frac{\|W\|_F^2}{2c_{\rm LP}N}.
+\frac{1}{N}\sum_i\mathrm{CE}(Wx_i+b,y_i)+\frac{\lVert W\rVert_F^2}{2c_{\rm LP}N}.
 $$
 
-The validation grid is $c_{\rm LP}\in\{10^{-6},10^{-4},10^{-2},0.316,1,10^2,10^4,10^6\}$; ties favor smaller $c_{\rm LP}$. Weights and bias start at zero. PyTorch L-BFGS uses strong-Wolfe line search, history size 10, at most 1,000 iterations and 5,000 objective evaluations, gradient tolerance $10^{-8}$ and change tolerance $10^{-12}$.
+The validation grid is $c_{\rm LP}\in\lbrace 10^{-6},10^{-4},10^{-2},0.316,1,10^2,10^4,10^6\rbrace$; ties favor smaller $c_{\rm LP}$. Weights and bias start at zero. PyTorch L-BFGS uses strong-Wolfe line search, history size 10, at most 1,000 iterations and 5,000 objective evaluations, gradient tolerance $10^{-8}$ and change tolerance $10^{-12}$.
 
 For LP++, let $X$ contain normalized support features, $Y$ be the one-hot labels and $S=XT^\top$, with text rows in class order. Classifier weights start at $Y^\top X$; the bias uses the linear-layer random initialization. All class text coefficients share
 
