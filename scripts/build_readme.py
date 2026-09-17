@@ -28,8 +28,8 @@ def table(headers, rows, text_columns=2):
 def metric(row, signed=False):
     if row is None or row.get("mean") is None:
         return "—"
-    return (f"{row['mean']:+.3f} ± {row['sample_sd']:.3f}" if signed else
-            f"{row['mean']:.2f} ± {row['sample_sd']:.2f}")
+    return (f"{row['mean']:+.3f}&nbsp;±&nbsp;{row['sample_sd']:.3f}" if signed else
+            f"{row['mean']:.2f}&nbsp;±&nbsp;{row['sample_sd']:.2f}")
 
 
 def render():
@@ -67,19 +67,20 @@ def render():
                     choices = [m for m, title, _ in METHODS if title == group]
                     winners[group] = max(choices, key=lambda m: statistics.mean(
                         lookup[family, ds, k, m]["mean"] for ds in DATASETS for k in (4, 16)))
-            rows, previous = [], None
-            for method, title, variant in METHODS:
-                if signed and method == "p0":
-                    continue
-                label = "" if title == previous else title
-                if not signed and winners.get(title) == method:
-                    variant = "**" + variant + "**"
-                rows.append([label, "*" + variant + "*"] + [
-                    metric(lookup.get((family, ds, k, method)), signed)
-                    for ds in DATASETS for k in (4, 16)])
-                previous = title
-            blocks.append("### " + encoder + "\n\n" + table(
-                ["Method", "Configuration"] + [f"{ds} {k}" for ds in DATASET_NAMES for k in (4, 16)], rows))
+            for shot in (4, 16):
+                rows, previous = [], None
+                for method, title, variant in METHODS:
+                    if signed and method == "p0":
+                        continue
+                    label = "" if title == previous else title
+                    if not signed and winners.get(title) == method:
+                        variant = "**" + variant + "**"
+                    rows.append([label, "*" + variant + "*"] + [
+                        metric(lookup.get((family, ds, shot, method)), signed)
+                        for ds in DATASETS])
+                    previous = title
+                blocks.append(f"### {encoder}: {shot}-shot\n\n" + table(
+                    ["Method", "Configuration", *DATASET_NAMES], rows))
         generated["paired" if signed else "accuracy"] = "\n\n".join(blocks)
 
     specs = [
