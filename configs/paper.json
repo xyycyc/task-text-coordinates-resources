@@ -1,0 +1,107 @@
+{
+  "encoders": [
+    "clip",
+    "siglip2"
+  ],
+  "datasets": [
+    "dtd",
+    "eurosat",
+    "oxford_pets",
+    "sun397"
+  ],
+  "shots": [
+    4,
+    16
+  ],
+  "support_seeds": [
+    1,
+    2,
+    3
+  ],
+  "views": 32,
+  "steps": 300,
+  "methods": [
+    "lp",
+    "lpplusplus",
+    "proker",
+    "prolip",
+    "lora_rank",
+    "lora_param",
+    "svd",
+    "comp_k2",
+    "comp_rank",
+    "comp_param",
+    "p0"
+  ],
+  "basis_seed": 8675309,
+  "validation_seed": 1729,
+  "augmentation_seed": "(17290 + view * 1000003 + crc32(relative_image_id)) mod 2**32",
+  "default_device": "cpu",
+  "cpu_threads": 2,
+  "endpoint_search": {
+    "learning_rate": 0.001,
+    "penalties": [
+      "1/K",
+      0,
+      0.01,
+      0.1,
+      1,
+      10,
+      100
+    ],
+    "additional_learning_rates_at_1_over_K": [
+      0.0001,
+      0.01
+    ]
+  },
+  "proker": {
+    "dtd": {
+      "beta": [
+        0.1,
+        10.0,
+        20
+      ],
+      "lmbda": [
+        0.001,
+        10.0,
+        100
+      ]
+    },
+    "eurosat": {
+      "beta": [
+        0.5,
+        3.0,
+        20
+      ],
+      "lmbda": [
+        0.001,
+        1.0,
+        100
+      ]
+    },
+    "oxford_pets": {
+      "beta": [
+        0.01,
+        5.0,
+        40
+      ],
+      "lmbda": [
+        0.01,
+        0.3,
+        20
+      ]
+    },
+    "sun397": {
+      "beta": [
+        0.1,
+        10.0,
+        20
+      ],
+      "lmbda": [
+        0.01,
+        10.0,
+        10
+      ]
+    }
+  }
+}

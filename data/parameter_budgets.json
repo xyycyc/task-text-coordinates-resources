@@ -30,7 +30,7 @@
     {
       "family": "clip",
       "dataset": "dtd",
-      "method": "full",
+      "method": "prolip",
       "classes": 47,
       "text_rank": 46,
       "parameters": 393216,
@@ -39,7 +39,7 @@
     {
       "family": "clip",
       "dataset": "dtd",
-      "method": "lora_same_rank",
+      "method": "lora_rank",
       "classes": 47,
       "text_rank": 46,
       "parameters": 58880,
@@ -48,7 +48,7 @@
     {
       "family": "clip",
       "dataset": "dtd",
-      "method": "lora_near_budget",
+      "method": "lora_param",
       "classes": 47,
       "text_rank": 46,
       "parameters": 35840,
@@ -66,7 +66,7 @@
     {
       "family": "clip",
       "dataset": "dtd",
-      "method": "comp",
+      "method": "comp_k2",
       "classes": 47,
       "text_rank": 46,
       "parameters": 2496,
@@ -75,7 +75,7 @@
     {
       "family": "clip",
       "dataset": "dtd",
-      "method": "comp_same_rank",
+      "method": "comp_rank",
       "classes": 47,
       "text_rank": 46,
       "parameters": 57408,
@@ -84,7 +84,7 @@
     {
       "family": "clip",
       "dataset": "dtd",
-      "method": "comp_near_budget",
+      "method": "comp_param",
       "classes": 47,
       "text_rank": 46,
       "parameters": 34944,
@@ -129,7 +129,7 @@
     {
       "family": "clip",
       "dataset": "eurosat",
-      "method": "full",
+      "method": "prolip",
       "classes": 10,
       "text_rank": 9,
       "parameters": 393216,
@@ -138,7 +138,7 @@
     {
       "family": "clip",
       "dataset": "eurosat",
-      "method": "lora_same_rank",
+      "method": "lora_rank",
       "classes": 10,
       "text_rank": 9,
       "parameters": 11520,
@@ -147,7 +147,7 @@
     {
       "family": "clip",
       "dataset": "eurosat",
-      "method": "lora_near_budget",
+      "method": "lora_param",
       "classes": 10,
       "text_rank": 9,
       "parameters": 6400,
@@ -165,7 +165,7 @@
     {
       "family": "clip",
       "dataset": "eurosat",
-      "method": "comp",
+      "method": "comp_k2",
       "classes": 10,
       "text_rank": 9,
       "parameters": 2496,
@@ -174,7 +174,7 @@
     {
       "family": "clip",
       "dataset": "eurosat",
-      "method": "comp_same_rank",
+      "method": "comp_rank",
       "classes": 10,
       "text_rank": 9,
       "parameters": 11232,
@@ -183,7 +183,7 @@
     {
       "family": "clip",
       "dataset": "eurosat",
-      "method": "comp_near_budget",
+      "method": "comp_param",
       "classes": 10,
       "text_rank": 9,
       "parameters": 7488,
@@ -228,7 +228,7 @@
     {
       "family": "clip",
       "dataset": "oxford_pets",
-      "method": "full",
+      "method": "prolip",
       "classes": 37,
       "text_rank": 36,
       "parameters": 393216,
@@ -237,7 +237,7 @@
     {
       "family": "clip",
       "dataset": "oxford_pets",
-      "method": "lora_same_rank",
+      "method": "lora_rank",
       "classes": 37,
       "text_rank": 36,
       "parameters": 46080,
@@ -246,7 +246,7 @@
     {
       "family": "clip",
       "dataset": "oxford_pets",
-      "method": "lora_near_budget",
+      "method": "lora_param",
       "classes": 37,
       "text_rank": 36,
       "parameters": 28160,
@@ -264,7 +264,7 @@
     {
       "family": "clip",
       "dataset": "oxford_pets",
-      "method": "comp",
+      "method": "comp_k2",
       "classes": 37,
       "text_rank": 36,
       "parameters": 2496,
@@ -273,7 +273,7 @@
     {
       "family": "clip",
       "dataset": "oxford_pets",
-      "method": "comp_same_rank",
+      "method": "comp_rank",
       "classes": 37,
       "text_rank": 36,
       "parameters": 44928,
@@ -282,7 +282,7 @@
     {
       "family": "clip",
       "dataset": "oxford_pets",
-      "method": "comp_near_budget",
+      "method": "comp_param",
       "classes": 37,
       "text_rank": 36,
       "parameters": 27456,
@@ -327,7 +327,7 @@
     {
       "family": "clip",
       "dataset": "sun397",
-      "method": "full",
+      "method": "prolip",
       "classes": 397,
       "text_rank": 396,
       "parameters": 393216,
@@ -336,7 +336,7 @@
     {
       "family": "clip",
       "dataset": "sun397",
-      "method": "lora_same_rank",
+      "method": "lora_rank",
       "classes": 397,
       "text_rank": 396,
       "parameters": 506880,
@@ -345,7 +345,7 @@
     {
       "family": "clip",
       "dataset": "sun397",
-      "method": "lora_near_budget",
+      "method": "lora_param",
       "classes": 397,
       "text_rank": 396,
       "parameters": 304640,
@@ -363,7 +363,7 @@
     {
       "family": "clip",
       "dataset": "sun397",
-      "method": "comp",
+      "method": "comp_k2",
       "classes": 397,
       "text_rank": 396,
       "parameters": 2496,
@@ -372,7 +372,7 @@
     {
       "family": "clip",
       "dataset": "sun397",
-      "method": "comp_same_rank",
+      "method": "comp_rank",
       "classes": 397,
       "text_rank": 396,
       "parameters": 494208,
@@ -381,7 +381,7 @@
     {
       "family": "clip",
       "dataset": "sun397",
-      "method": "comp_near_budget",
+      "method": "comp_param",
       "classes": 397,
       "text_rank": 396,
       "parameters": 304512,
@@ -426,7 +426,7 @@
     {
       "family": "siglip2",
       "dataset": "dtd",
-      "method": "full",
+      "method": "prolip",
       "classes": 47,
       "text_rank": 46,
       "parameters": 589824,
@@ -435,7 +435,7 @@
     {
       "family": "siglip2",
       "dataset": "dtd",
-      "method": "lora_same_rank",
+      "method": "lora_rank",
       "classes": 47,
       "text_rank": 46,
       "parameters": 70656,
@@ -444,7 +444,7 @@
     {
       "family": "siglip2",
       "dataset": "dtd",
-      "method": "lora_near_budget",
+      "method": "lora_param",
       "classes": 47,
       "text_rank": 46,
       "parameters": 35328,
@@ -462,7 +462,7 @@
     {
       "family": "siglip2",
       "dataset": "dtd",
-      "method": "comp",
+      "method": "comp_k2",
       "classes": 47,
       "text_rank": 46,
       "parameters": 7616,
@@ -471,7 +471,7 @@
     {
       "family": "siglip2",
       "dataset": "dtd",
-      "method": "comp_same_rank",
+      "method": "comp_rank",
       "classes": 47,
       "text_rank": 46,
       "parameters": 175168,
@@ -480,7 +480,7 @@
     {
       "family": "siglip2",
       "dataset": "dtd",
-      "method": "comp_near_budget",
+      "method": "comp_param",
       "classes": 47,
       "text_rank": 46,
       "parameters": 34272,
@@ -525,7 +525,7 @@
     {
       "family": "siglip2",
       "dataset": "eurosat",
-      "method": "full",
+      "method": "prolip",
       "classes": 10,
       "text_rank": 9,
       "parameters": 589824,
@@ -534,7 +534,7 @@
     {
       "family": "siglip2",
       "dataset": "eurosat",
-      "method": "lora_same_rank",
+      "method": "lora_rank",
       "classes": 10,
       "text_rank": 9,
       "parameters": 13824,
@@ -543,7 +543,7 @@
     {
       "family": "siglip2",
       "dataset": "eurosat",
-      "method": "lora_near_budget",
+      "method": "lora_param",
       "classes": 10,
       "text_rank": 9,
       "parameters": 6144,
@@ -561,7 +561,7 @@
     {
       "family": "siglip2",
       "dataset": "eurosat",
-      "method": "comp",
+      "method": "comp_k2",
       "classes": 10,
       "text_rank": 9,
       "parameters": 7616,
@@ -570,7 +570,7 @@
     {
       "family": "siglip2",
       "dataset": "eurosat",
-      "method": "comp_same_rank",
+      "method": "comp_rank",
       "classes": 10,
       "text_rank": 9,
       "parameters": 34272,
@@ -579,7 +579,7 @@
     {
       "family": "siglip2",
       "dataset": "eurosat",
-      "method": "comp_near_budget",
+      "method": "comp_param",
       "classes": 10,
       "text_rank": 9,
       "parameters": 7616,
@@ -624,7 +624,7 @@
     {
       "family": "siglip2",
       "dataset": "oxford_pets",
-      "method": "full",
+      "method": "prolip",
       "classes": 37,
       "text_rank": 36,
       "parameters": 589824,
@@ -633,7 +633,7 @@
     {
       "family": "siglip2",
       "dataset": "oxford_pets",
-      "method": "lora_same_rank",
+      "method": "lora_rank",
       "classes": 37,
       "text_rank": 36,
       "parameters": 55296,
@@ -642,7 +642,7 @@
     {
       "family": "siglip2",
       "dataset": "oxford_pets",
-      "method": "lora_near_budget",
+      "method": "lora_param",
       "classes": 37,
       "text_rank": 36,
       "parameters": 27648,
@@ -660,7 +660,7 @@
     {
       "family": "siglip2",
       "dataset": "oxford_pets",
-      "method": "comp",
+      "method": "comp_k2",
       "classes": 37,
       "text_rank": 36,
       "parameters": 7616,
@@ -669,7 +669,7 @@
     {
       "family": "siglip2",
       "dataset": "oxford_pets",
-      "method": "comp_same_rank",
+      "method": "comp_rank",
       "classes": 37,
       "text_rank": 36,
       "parameters": 137088,
@@ -678,7 +678,7 @@
     {
       "family": "siglip2",
       "dataset": "oxford_pets",
-      "method": "comp_near_budget",
+      "method": "comp_param",
       "classes": 37,
       "text_rank": 36,
       "parameters": 26656,
@@ -723,7 +723,7 @@
     {
       "family": "siglip2",
       "dataset": "sun397",
-      "method": "full",
+      "method": "prolip",
       "classes": 397,
       "text_rank": 396,
       "parameters": 589824,
@@ -732,7 +732,7 @@
     {
       "family": "siglip2",
       "dataset": "sun397",
-      "method": "lora_same_rank",
+      "method": "lora_rank",
       "classes": 397,
       "text_rank": 396,
       "parameters": 608256,
@@ -741,7 +741,7 @@
     {
       "family": "siglip2",
       "dataset": "sun397",
-      "method": "lora_near_budget",
+      "method": "lora_param",
       "classes": 397,
       "text_rank": 396,
       "parameters": 304128,
@@ -759,7 +759,7 @@
     {
       "family": "siglip2",
       "dataset": "sun397",
-      "method": "comp",
+      "method": "comp_k2",
       "classes": 397,
       "text_rank": 396,
       "parameters": 7616,
@@ -768,7 +768,7 @@
     {
       "family": "siglip2",
       "dataset": "sun397",
-      "method": "comp_same_rank",
+      "method": "comp_rank",
       "classes": 397,
       "text_rank": 396,
       "parameters": 1507968,
@@ -777,7 +777,7 @@
     {
       "family": "siglip2",
       "dataset": "sun397",
-      "method": "comp_near_budget",
+      "method": "comp_param",
       "classes": 397,
       "text_rank": 396,
       "parameters": 304640,

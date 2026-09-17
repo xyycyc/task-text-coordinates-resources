@@ -1,0 +1,8407 @@
+{
+  "support_seeds": [
+    1,
+    2,
+    3
+  ],
+  "main": [
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "mean": 55.614657210401894,
+      "sample_sd": 1.3898316804142854,
+      "method": "lp"
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "mean": 68.71552403467297,
+      "sample_sd": 1.1404220361234252,
+      "method": "lp"
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "mean": 71.11522633744856,
+      "sample_sd": 2.618050590414444,
+      "method": "lp"
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "mean": 85.89300411522633,
+      "sample_sd": 1.0686205622250866,
+      "method": "lp"
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "mean": 69.5829926410466,
+      "sample_sd": 1.203873689035582,
+      "method": "lp"
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "mean": 85.78177523394204,
+      "sample_sd": 0.6766438150764159,
+      "method": "lp"
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "mean": 62.743912678421495,
+      "sample_sd": 0.2523086347828163,
+      "method": "lp"
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "mean": 73.12510495382033,
+      "sample_sd": 0.10971886632355927,
+      "method": "lp"
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "mean": 62.23404255319149,
+      "sample_sd": 0.5118353450262608,
+      "method": "lpplusplus"
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "mean": 71.29629629629629,
+      "sample_sd": 0.5978719820919441,
+      "method": "lpplusplus"
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "mean": 71.21399176954732,
+      "sample_sd": 5.744288474099092,
+      "method": "lpplusplus"
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "mean": 85.32098765432099,
+      "sample_sd": 2.7916525909192,
+      "method": "lpplusplus"
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "mean": 91.89606613972926,
+      "sample_sd": 0.3385962597180743,
+      "method": "lpplusplus"
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "mean": 93.05896247842283,
+      "sample_sd": 0.4497826399377299,
+      "method": "lpplusplus"
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "mean": 72.75062972292191,
+      "sample_sd": 0.4916680427189711,
+      "method": "lpplusplus"
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "mean": 76.25020990764064,
+      "sample_sd": 0.0797074343328641,
+      "method": "lpplusplus"
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "mean": 62.43104806934594,
+      "sample_sd": 0.18998523957827027,
+      "method": "proker"
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "mean": 73.28605200945627,
+      "sample_sd": 0.9175044146725773,
+      "method": "proker"
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "mean": 79.44444444444444,
+      "sample_sd": 1.573141820278558,
+      "method": "proker"
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "mean": 87.52263374485597,
+      "sample_sd": 3.0301370311047457,
+      "method": "proker"
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "mean": 90.29708367402563,
+      "sample_sd": 1.569493600314849,
+      "method": "proker"
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "mean": 92.92268556373217,
+      "sample_sd": 0.2939709219108473,
+      "method": "proker"
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "mean": 65.35516372795969,
+      "sample_sd": 0.20444961095921962,
+      "method": "proker"
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "mean": null,
+      "sample_sd": null,
+      "method": "proker"
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "mean": 63.53427895981088,
+      "sample_sd": 1.2962004846017348,
+      "method": "prolip"
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "mean": 72.57683215130024,
+      "sample_sd": 0.15636828079577825,
+      "method": "prolip"
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "mean": 81.69958847736625,
+      "sample_sd": 1.555620875237102,
+      "method": "prolip"
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "mean": 88.11522633744856,
+      "sample_sd": 0.8152200015126163,
+      "method": "prolip"
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "mean": 92.15044971381849,
+      "sample_sd": 0.23603854014293474,
+      "method": "prolip"
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "mean": 92.69555737258108,
+      "sample_sd": 1.0629599345870773,
+      "method": "prolip"
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "mean": 72.15952980688498,
+      "sample_sd": 0.5854531442434554,
+      "method": "prolip"
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "mean": 75.84382871536523,
+      "sample_sd": 0.052596002563786284,
+      "method": "prolip"
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "mean": 62.529550827423165,
+      "sample_sd": 2.148082960447548,
+      "method": "lora_rank"
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "mean": 71.55240346729708,
+      "sample_sd": 0.20755819056052924,
+      "method": "lora_rank"
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "mean": 70.38271604938271,
+      "sample_sd": 11.260132357310948,
+      "method": "lora_rank"
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "mean": 87.51440329218107,
+      "sample_sd": 0.4903167410240811,
+      "method": "lora_rank"
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "mean": 92.26855637321704,
+      "sample_sd": 0.1501109443250524,
+      "method": "lora_rank"
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "mean": 93.095302989007,
+      "sample_sd": 0.4611988787679535,
+      "method": "lora_rank"
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "mean": 72.16456759026029,
+      "sample_sd": 0.6099741231792692,
+      "method": "lora_rank"
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "mean": 75.61880772460117,
+      "sample_sd": 0.26496697267925856,
+      "method": "lora_rank"
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "mean": 62.470449172576835,
+      "sample_sd": 1.2880907043559893,
+      "method": "lora_param"
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "mean": 70.48857368006304,
+      "sample_sd": 0.41930253455068867,
+      "method": "lora_param"
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "mean": 71.32921810699588,
+      "sample_sd": 7.693392249603169,
+      "method": "lora_param"
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "mean": 86.36213991769547,
+      "sample_sd": 1.0657641739143018,
+      "method": "lora_param"
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "mean": 92.050513309712,
+      "sample_sd": 0.19336600939214038,
+      "method": "lora_param"
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "mean": 93.04079222313074,
+      "sample_sd": 0.42253169634717647,
+      "method": "lora_param"
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "mean": 71.62888329135181,
+      "sample_sd": 0.44333447818143323,
+      "method": "lora_param"
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "mean": 75.23761544920235,
+      "sample_sd": 0.05882209870070864,
+      "method": "lora_param"
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "mean": 47.41922773837668,
+      "sample_sd": 0.23885649434559222,
+      "method": "svd"
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "mean": 48.60126083530339,
+      "sample_sd": 0.2237552539716437,
+      "method": "svd"
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "mean": 69.70370370370371,
+      "sample_sd": 1.0619437048408875,
+      "method": "svd"
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "mean": 72.06584362139918,
+      "sample_sd": 0.981798483889671,
+      "method": "svd"
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "mean": 91.49632052330335,
+      "sample_sd": 0.6027076693239536,
+      "method": "svd"
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "mean": 92.25038611792496,
+      "sample_sd": 0.08761379813748882,
+      "method": "svd"
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "mean": 66.56759026028547,
+      "sample_sd": 0.051703792840771715,
+      "method": "svd"
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "mean": 66.58102434928631,
+      "sample_sd": 0.1266813045342875,
+      "method": "svd"
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "mean": 50.86682427107959,
+      "sample_sd": 1.697908701845171,
+      "method": "comp_k2"
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "mean": 56.422379826635144,
+      "sample_sd": 0.7389676648349522,
+      "method": "comp_k2"
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "mean": 67.61316872427983,
+      "sample_sd": 4.253446262856683,
+      "method": "comp_k2"
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "mean": 78.17695473251028,
+      "sample_sd": 2.4318585246180664,
+      "method": "comp_k2"
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "mean": 91.423639502135,
+      "sample_sd": 0.45715437904638756,
+      "method": "comp_k2"
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "mean": 91.87789588443718,
+      "sample_sd": 0.23760691978962287,
+      "method": "comp_k2"
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "mean": 68.12762384550798,
+      "sample_sd": 0.38818183150318314,
+      "method": "comp_k2"
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "mean": 69.6574307304786,
+      "sample_sd": 0.10287444764061746,
+      "method": "comp_k2"
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "mean": 63.908589440504336,
+      "sample_sd": 1.4015111435644143,
+      "method": "p0"
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "mean": 72.9117415287628,
+      "sample_sd": 0.9608942788224767,
+      "method": "p0"
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "mean": 81.2880658436214,
+      "sample_sd": 0.64862808020069,
+      "method": "p0"
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "mean": 88.93004115226337,
+      "sample_sd": 0.9772081310252013,
+      "method": "p0"
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "mean": 92.23221586263287,
+      "sample_sd": 0.14422193028424699,
+      "method": "p0"
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "mean": 93.33151630780412,
+      "sample_sd": 0.6317920832457031,
+      "method": "p0"
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "mean": 72.7808564231738,
+      "sample_sd": 0.48990986360779837,
+      "method": "p0"
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "mean": 76.27539882451721,
+      "sample_sd": 0.2066310173278416,
+      "method": "p0"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "mean": 65.9377462568952,
+      "sample_sd": 0.9499261978913488,
+      "method": "lp"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "mean": 77.4428684003152,
+      "sample_sd": 0.3562478589445401,
+      "method": "lp"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "mean": 69.76543209876543,
+      "sample_sd": 4.1725655545985925,
+      "method": "lp"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "mean": 85.38271604938271,
+      "sample_sd": 0.45679012345679376,
+      "method": "lp"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "mean": 84.90960297992187,
+      "sample_sd": 1.1038710491555617,
+      "method": "lp"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "mean": 92.03234305441991,
+      "sample_sd": 0.6755450693202956,
+      "method": "lp"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "mean": 68.24517212426532,
+      "sample_sd": 0.6838284506223837,
+      "method": "lp"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "mean": 77.12846347607054,
+      "sample_sd": 0.22686811585284478,
+      "method": "lp"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "mean": 73.02994483845548,
+      "sample_sd": 1.027643920862488,
+      "method": "lpplusplus"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "mean": 78.72340425531915,
+      "sample_sd": 0.5118353450262649,
+      "method": "lpplusplus"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "mean": 67.45679012345678,
+      "sample_sd": 4.857801146283452,
+      "method": "lpplusplus"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "mean": 84.42798353909464,
+      "sample_sd": 1.519337996955094,
+      "method": "lpplusplus"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "mean": 94.8759880076315,
+      "sample_sd": 0.288443860568502,
+      "method": "lpplusplus"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "mean": 94.80330698646316,
+      "sample_sd": 0.1642876471338726,
+      "method": "lpplusplus"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "mean": 77.43073047858942,
+      "sample_sd": 0.09910486434713546,
+      "method": "lpplusplus"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "mean": 80.05205709487825,
+      "sample_sd": 0.2565974739955891,
+      "method": "lpplusplus"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "mean": 73.1678486997636,
+      "sample_sd": 0.8274231678486998,
+      "method": "proker"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "mean": 80.22064617809298,
+      "sample_sd": 1.311382130862303,
+      "method": "proker"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "mean": 78.5843621399177,
+      "sample_sd": 1.1696730050658057,
+      "method": "proker"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "mean": 88.95884773662551,
+      "sample_sd": 0.16852341752628414,
+      "method": "proker"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "mean": 94.90324339056964,
+      "sample_sd": 0.054510765876258915,
+      "method": "proker"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "mean": 95.2303079858272,
+      "sample_sd": 0.17020981189420714,
+      "method": "proker"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "mean": 74.31738035264485,
+      "sample_sd": 0.15778800769134252,
+      "method": "proker"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "mean": null,
+      "sample_sd": null,
+      "method": "proker"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "mean": 73.48305752561072,
+      "sample_sd": 1.077423870281742,
+      "method": "prolip"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "mean": 80.24034672970843,
+      "sample_sd": 1.3113821308623002,
+      "method": "prolip"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "mean": 78.45267489711934,
+      "sample_sd": 3.685228267286141,
+      "method": "prolip"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "mean": 88.27572016460906,
+      "sample_sd": 0.7326027592254734,
+      "method": "prolip"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "mean": 94.9577541564459,
+      "sample_sd": 0.2725538293813017,
+      "method": "prolip"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "mean": 95.13037158172072,
+      "sample_sd": 0.15970196993955538,
+      "method": "prolip"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "mean": 76.94374475230899,
+      "sample_sd": 0.13799603529169793,
+      "method": "prolip"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "mean": 79.58018471872376,
+      "sample_sd": 0.14296420926141057,
+      "method": "prolip"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "mean": 73.5618597320725,
+      "sample_sd": 0.6926081887804173,
+      "method": "lora_rank"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "mean": 80.02364066193853,
+      "sample_sd": 0.9942437258428297,
+      "method": "lora_rank"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "mean": 74.96707818930041,
+      "sample_sd": 1.1001748024037536,
+      "method": "lora_rank"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "mean": 86.41152263374485,
+      "sample_sd": 0.8028805529716644,
+      "method": "lora_rank"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "mean": 94.91232851821567,
+      "sample_sd": 0.20090255644131966,
+      "method": "lora_rank"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "mean": 94.94866902879986,
+      "sample_sd": 0.27839653758598504,
+      "method": "lora_rank"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "mean": 76.82283795130142,
+      "sample_sd": 0.20656959616701212,
+      "method": "lora_rank"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "mean": 79.07640638119227,
+      "sample_sd": 0.7009643066735518,
+      "method": "lora_rank"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "mean": 72.97084318360915,
+      "sample_sd": 1.034419668465328,
+      "method": "lora_param"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "mean": 79.39322301024428,
+      "sample_sd": 0.7713464125473583,
+      "method": "lora_param"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "mean": 70.06995884773663,
+      "sample_sd": 1.9769026490262673,
+      "method": "lora_param"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "mean": 82.57613168724279,
+      "sample_sd": 0.8910581669063162,
+      "method": "lora_param"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "mean": 94.86690287998546,
+      "sample_sd": 0.13444761140136785,
+      "method": "lora_param"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "mean": 95.00317979467611,
+      "sample_sd": 0.06294361070478151,
+      "method": "lora_param"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "mean": 76.7808564231738,
+      "sample_sd": 0.1994224222961186,
+      "method": "lora_param"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "mean": 79.47774979009236,
+      "sample_sd": 0.10353022765271185,
+      "method": "lora_param"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "mean": 63.92828999211978,
+      "sample_sd": 0.5026536966971289,
+      "method": "svd"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "mean": 64.53900709219859,
+      "sample_sd": 0.2047341380105027,
+      "method": "svd"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "mean": 48.93827160493827,
+      "sample_sd": 0.3476574775389822,
+      "method": "svd"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "mean": 49.1275720164609,
+      "sample_sd": 0.37736872337422345,
+      "method": "svd"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "mean": 94.8123921141092,
+      "sample_sd": 0.12880391458851492,
+      "method": "svd"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "mean": 94.99409466703007,
+      "sample_sd": 0.1814752825968808,
+      "method": "svd"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "mean": 72.79596977329975,
+      "sample_sd": 0.17903632890596136,
+      "method": "svd"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "mean": 73.06129303106633,
+      "sample_sd": 0.007695341217389722,
+      "method": "svd"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "mean": 68.67612293144208,
+      "sample_sd": 1.857710832801623,
+      "method": "comp_k2"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "mean": 73.69976359338061,
+      "sample_sd": 0.5416756140609803,
+      "method": "comp_k2"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "mean": 62.63374485596708,
+      "sample_sd": 5.23888031852421,
+      "method": "comp_k2"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "mean": 73.30864197530865,
+      "sample_sd": 0.9901973433839755,
+      "method": "comp_k2"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "mean": 94.8941582629236,
+      "sample_sd": 0.2862896567018889,
+      "method": "comp_k2"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "mean": 95.04860543290634,
+      "sample_sd": 0.31589604162285423,
+      "method": "comp_k2"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "mean": 74.6129303106633,
+      "sample_sd": 0.23208458007813124,
+      "method": "comp_k2"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "mean": 76.29722921914357,
+      "sample_sd": 0.05235418058142405,
+      "method": "comp_k2"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "mean": 74.822695035461,
+      "sample_sd": 0.7728544226135917,
+      "method": "p0"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "mean": 80.79196217494089,
+      "sample_sd": 0.821066429636514,
+      "method": "p0"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "mean": 76.35802469135803,
+      "sample_sd": 2.2587869708064208,
+      "method": "p0"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "mean": 87.70781893004114,
+      "sample_sd": 0.5229576780374683,
+      "method": "p0"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "mean": 94.96683928409195,
+      "sample_sd": 0.253245386840491,
+      "method": "p0"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "mean": 95.08494594349051,
+      "sample_sd": 0.11015131873337466,
+      "method": "p0"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "mean": 77.27455919395466,
+      "sample_sd": 0.1651747739118939,
+      "method": "p0"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "mean": 79.94962216624685,
+      "sample_sd": 0.08323784202447036,
+      "method": "p0"
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "mean": 62.923561859732075,
+      "sample_sd": 2.5804714723144215,
+      "method": "comp_param"
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "mean": 63.43577620173365,
+      "sample_sd": 2.277012220844624,
+      "method": "comp_rank"
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "mean": 71.82821118991332,
+      "sample_sd": 0.927601053348587,
+      "method": "comp_param"
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "mean": 72.53743104806934,
+      "sample_sd": 0.8302327622421385,
+      "method": "comp_rank"
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "mean": 74.74074074074073,
+      "sample_sd": 10.944867448114213,
+      "method": "comp_param"
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "mean": 80.94238683127573,
+      "sample_sd": 1.6853698326612438,
+      "method": "comp_rank"
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "mean": 87.64609053497942,
+      "sample_sd": 0.8768329666560918,
+      "method": "comp_param"
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "mean": 88.02880658436214,
+      "sample_sd": 1.0871443524493634,
+      "method": "comp_rank"
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "mean": 92.08685382029617,
+      "sample_sd": 0.12880391458851492,
+      "method": "comp_param"
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "mean": 92.15953484146452,
+      "sample_sd": 0.12588722140956302,
+      "method": "comp_rank"
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "mean": 93.05896247842281,
+      "sample_sd": 0.27300770784621886,
+      "method": "comp_param"
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "mean": 93.03170709548469,
+      "sample_sd": 0.34511528869306474,
+      "method": "comp_rank"
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "mean": 72.55919395465995,
+      "sample_sd": 0.40449981191226503,
+      "method": "comp_param"
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "mean": 72.73383711167087,
+      "sample_sd": 0.7311789109439815,
+      "method": "comp_rank"
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "mean": 76.06213266162888,
+      "sample_sd": 0.20675380490963688,
+      "method": "comp_param"
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "mean": 76.11922753988246,
+      "sample_sd": 0.18743894324187416,
+      "method": "comp_rank"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "mean": 72.7344365642238,
+      "sample_sd": 1.128103885123758,
+      "method": "comp_param"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "mean": 72.77383766745469,
+      "sample_sd": 1.6719954604191294,
+      "method": "comp_rank"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "mean": 77.04885736800631,
+      "sample_sd": 0.536274924697249,
+      "method": "comp_param"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "mean": 78.72340425531915,
+      "sample_sd": 0.6170393917795823,
+      "method": "comp_rank"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "mean": 62.63374485596708,
+      "sample_sd": 5.23888031852421,
+      "method": "comp_param"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "mean": 69.16460905349794,
+      "sample_sd": 4.43518124751036,
+      "method": "comp_rank"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "mean": 73.30864197530865,
+      "sample_sd": 0.9901973433839755,
+      "method": "comp_param"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "mean": 83.32510288065843,
+      "sample_sd": 0.15681118422434454,
+      "method": "comp_rank"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "mean": 94.96683928409195,
+      "sample_sd": 0.245802657553714,
+      "method": "comp_param"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "mean": 94.97592441173798,
+      "sample_sd": 0.16653314054532262,
+      "method": "comp_rank"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "mean": 95.38475515580994,
+      "sample_sd": 0.06859120955093065,
+      "method": "comp_param"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "mean": 95.11220132642863,
+      "sample_sd": 0.2349871383006702,
+      "method": "comp_rank"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "mean": 76.89168765743074,
+      "sample_sd": 0.07523014873082537,
+      "method": "comp_param"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "mean": 77.06968933669185,
+      "sample_sd": 0.09576206501684958,
+      "method": "comp_rank"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "mean": 79.22921914357683,
+      "sample_sd": 0.12038088811434218,
+      "method": "comp_param"
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "mean": 79.48110831234257,
+      "sample_sd": 0.18136020151133891,
+      "method": "comp_rank"
+    }
+  ],
+  "per_seed": [
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 1,
+      "method": "comp_k2",
+      "accuracy": 48.93617021276596
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 1,
+      "method": "comp_param",
+      "accuracy": 60.22458628841608
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 1,
+      "method": "comp_rank",
+      "accuracy": 61.406619385342786
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 1,
+      "method": "lora_param",
+      "accuracy": 61.87943262411348
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 1,
+      "method": "lora_rank",
+      "accuracy": 60.69739952718676
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 1,
+      "method": "lp",
+      "accuracy": 54.9645390070922
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 1,
+      "method": "lpplusplus",
+      "accuracy": 61.938534278959814
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 1,
+      "method": "p0",
+      "accuracy": 62.4113475177305
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 1,
+      "method": "proker",
+      "accuracy": 62.29314420803782
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 1,
+      "method": "prolip",
+      "accuracy": 63.002364066193856
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 1,
+      "method": "svd",
+      "accuracy": 47.45862884160756
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 2,
+      "method": "comp_k2",
+      "accuracy": 51.536643026004725
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 2,
+      "method": "comp_param",
+      "accuracy": 63.17966903073286
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 2,
+      "method": "comp_rank",
+      "accuracy": 63.002364066193856
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 2,
+      "method": "lora_param",
+      "accuracy": 61.5839243498818
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 2,
+      "method": "lora_rank",
+      "accuracy": 61.997635933806144
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 2,
+      "method": "lp",
+      "accuracy": 54.66903073286052
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 2,
+      "method": "lpplusplus",
+      "accuracy": 61.938534278959814
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 2,
+      "method": "p0",
+      "accuracy": 64.12529550827423
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 2,
+      "method": "proker",
+      "accuracy": 62.35224586288416
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 2,
+      "method": "prolip",
+      "accuracy": 62.5886524822695
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 2,
+      "method": "svd",
+      "accuracy": 47.635933806146575
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 3,
+      "method": "comp_k2",
+      "accuracy": 52.12765957446808
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 3,
+      "method": "comp_param",
+      "accuracy": 65.36643026004728
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 3,
+      "method": "comp_rank",
+      "accuracy": 65.89834515366431
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 3,
+      "method": "lora_param",
+      "accuracy": 63.94799054373522
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 3,
+      "method": "lora_rank",
+      "accuracy": 64.8936170212766
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 3,
+      "method": "lp",
+      "accuracy": 57.21040189125296
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 3,
+      "method": "lpplusplus",
+      "accuracy": 62.825059101654844
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 3,
+      "method": "p0",
+      "accuracy": 65.18912529550828
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 3,
+      "method": "proker",
+      "accuracy": 62.64775413711584
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 3,
+      "method": "prolip",
+      "accuracy": 65.01182033096927
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 3,
+      "method": "svd",
+      "accuracy": 47.163120567375884
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 1,
+      "method": "comp_k2",
+      "accuracy": 57.15130023640662
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 1,
+      "method": "comp_param",
+      "accuracy": 71.5130023640662
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 1,
+      "method": "comp_rank",
+      "accuracy": 72.45862884160756
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 1,
+      "method": "lora_param",
+      "accuracy": 70.0354609929078
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 1,
+      "method": "lora_rank",
+      "accuracy": 71.74940898345153
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 1,
+      "method": "lp",
+      "accuracy": 69.62174940898345
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 1,
+      "method": "lpplusplus",
+      "accuracy": 70.98108747044917
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 1,
+      "method": "p0",
+      "accuracy": 73.10874704491725
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 1,
+      "method": "proker",
+      "accuracy": 74.23167848699764
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 1,
+      "method": "prolip",
+      "accuracy": 72.63593380614657
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 1,
+      "method": "svd",
+      "accuracy": 48.758865248226954
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 2,
+      "method": "comp_k2",
+      "accuracy": 55.673758865248224
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 2,
+      "method": "comp_param",
+      "accuracy": 72.87234042553192
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 2,
+      "method": "comp_rank",
+      "accuracy": 73.40425531914893
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 2,
+      "method": "lora_param",
+      "accuracy": 70.86288416075651
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 2,
+      "method": "lora_rank",
+      "accuracy": 71.57210401891253
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 2,
+      "method": "lp",
+      "accuracy": 69.08983451536643
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 2,
+      "method": "lpplusplus",
+      "accuracy": 71.98581560283688
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 2,
+      "method": "p0",
+      "accuracy": 73.75886524822695
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 2,
+      "method": "proker",
+      "accuracy": 73.22695035460993
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 2,
+      "method": "prolip",
+      "accuracy": 72.69503546099291
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 2,
+      "method": "svd",
+      "accuracy": 48.69976359338062
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 3,
+      "method": "comp_k2",
+      "accuracy": 56.442080378250594
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 3,
+      "method": "comp_param",
+      "accuracy": 71.09929078014184
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 3,
+      "method": "comp_rank",
+      "accuracy": 71.74940898345153
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 3,
+      "method": "lora_param",
+      "accuracy": 70.56737588652483
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 3,
+      "method": "lora_rank",
+      "accuracy": 71.33569739952719
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 3,
+      "method": "lp",
+      "accuracy": 67.43498817966903
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 3,
+      "method": "lpplusplus",
+      "accuracy": 70.92198581560284
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 3,
+      "method": "p0",
+      "accuracy": 71.8676122931442
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 3,
+      "method": "proker",
+      "accuracy": 72.39952718676123
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 3,
+      "method": "prolip",
+      "accuracy": 72.39952718676123
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 3,
+      "method": "svd",
+      "accuracy": 48.3451536643026
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 1,
+      "method": "comp_k2",
+      "accuracy": 65.96296296296296
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 1,
+      "method": "comp_param",
+      "accuracy": 62.407407407407405
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 1,
+      "method": "comp_rank",
+      "accuracy": 80.41975308641975
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 1,
+      "method": "lora_param",
+      "accuracy": 62.901234567901234
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 1,
+      "method": "lora_rank",
+      "accuracy": 63.17283950617284
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 1,
+      "method": "lp",
+      "accuracy": 73.53086419753086
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 1,
+      "method": "lpplusplus",
+      "accuracy": 73.4320987654321
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 1,
+      "method": "p0",
+      "accuracy": 80.5925925925926
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 1,
+      "method": "proker",
+      "accuracy": 81.08641975308642
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 1,
+      "method": "prolip",
+      "accuracy": 80.72839506172839
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 1,
+      "method": "svd",
+      "accuracy": 68.87654320987654
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 2,
+      "method": "comp_k2",
+      "accuracy": 64.4320987654321
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 2,
+      "method": "comp_param",
+      "accuracy": 78.51851851851852
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 2,
+      "method": "comp_rank",
+      "accuracy": 79.58024691358025
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 2,
+      "method": "lora_param",
+      "accuracy": 77.9753086419753
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 2,
+      "method": "lora_rank",
+      "accuracy": 64.61728395061728
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 2,
+      "method": "lp",
+      "accuracy": 68.33333333333333
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 2,
+      "method": "lpplusplus",
+      "accuracy": 64.69135802469135
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 2,
+      "method": "p0",
+      "accuracy": 81.39506172839506
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 2,
+      "method": "proker",
+      "accuracy": 77.95061728395062
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 2,
+      "method": "prolip",
+      "accuracy": 80.87654320987654
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 2,
+      "method": "svd",
+      "accuracy": 70.90123456790124
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 3,
+      "method": "comp_k2",
+      "accuracy": 72.44444444444444
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 3,
+      "method": "comp_param",
+      "accuracy": 83.29629629629629
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 3,
+      "method": "comp_rank",
+      "accuracy": 82.82716049382717
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 3,
+      "method": "lora_param",
+      "accuracy": 73.11111111111111
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 3,
+      "method": "lora_rank",
+      "accuracy": 83.35802469135803
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 3,
+      "method": "lp",
+      "accuracy": 71.48148148148148
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 3,
+      "method": "lpplusplus",
+      "accuracy": 75.51851851851852
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 3,
+      "method": "p0",
+      "accuracy": 81.87654320987654
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 3,
+      "method": "proker",
+      "accuracy": 79.29629629629629
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 3,
+      "method": "prolip",
+      "accuracy": 83.49382716049382
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 3,
+      "method": "svd",
+      "accuracy": 69.33333333333333
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 1,
+      "method": "comp_k2",
+      "accuracy": 78.45679012345678
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 1,
+      "method": "comp_param",
+      "accuracy": 87.91358024691358
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 1,
+      "method": "comp_rank",
+      "accuracy": 87.72839506172839
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 1,
+      "method": "lora_param",
+      "accuracy": 85.72839506172839
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 1,
+      "method": "lora_rank",
+      "accuracy": 87.4074074074074
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 1,
+      "method": "lp",
+      "accuracy": 85.35802469135803
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 1,
+      "method": "lpplusplus",
+      "accuracy": 82.70370370370371
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 1,
+      "method": "p0",
+      "accuracy": 88.49382716049382
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 1,
+      "method": "proker",
+      "accuracy": 84.32098765432099
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 1,
+      "method": "prolip",
+      "accuracy": 87.91358024691358
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 1,
+      "method": "svd",
+      "accuracy": 72.03703703703704
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 2,
+      "method": "comp_k2",
+      "accuracy": 75.61728395061728
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 2,
+      "method": "comp_param",
+      "accuracy": 86.66666666666667
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 2,
+      "method": "comp_rank",
+      "accuracy": 87.12345679012346
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 2,
+      "method": "lora_param",
+      "accuracy": 85.76543209876543
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 2,
+      "method": "lora_rank",
+      "accuracy": 87.08641975308642
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 2,
+      "method": "lp",
+      "accuracy": 85.19753086419753
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 2,
+      "method": "lpplusplus",
+      "accuracy": 85.0
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 2,
+      "method": "p0",
+      "accuracy": 88.24691358024691
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 2,
+      "method": "proker",
+      "accuracy": 87.90123456790124
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 2,
+      "method": "prolip",
+      "accuracy": 87.41975308641975
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 2,
+      "method": "svd",
+      "accuracy": 71.09876543209876
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 3,
+      "method": "comp_k2",
+      "accuracy": 80.45679012345678
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 3,
+      "method": "comp_param",
+      "accuracy": 88.35802469135803
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 3,
+      "method": "comp_rank",
+      "accuracy": 89.23456790123457
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 3,
+      "method": "lora_param",
+      "accuracy": 87.5925925925926
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 3,
+      "method": "lora_rank",
+      "accuracy": 88.04938271604938
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 3,
+      "method": "lp",
+      "accuracy": 87.12345679012346
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 3,
+      "method": "lpplusplus",
+      "accuracy": 88.25925925925925
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 3,
+      "method": "p0",
+      "accuracy": 90.04938271604938
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 3,
+      "method": "proker",
+      "accuracy": 90.34567901234568
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 3,
+      "method": "prolip",
+      "accuracy": 89.01234567901234
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 3,
+      "method": "svd",
+      "accuracy": 73.06172839506173
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 1,
+      "method": "comp_k2",
+      "accuracy": 90.89670209866449
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 1,
+      "method": "comp_param",
+      "accuracy": 92.04142818206596
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 1,
+      "method": "comp_rank",
+      "accuracy": 92.23221586263287
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 1,
+      "method": "lora_param",
+      "accuracy": 91.87789588443718
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 1,
+      "method": "lora_rank",
+      "accuracy": 92.36849277732352
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 1,
+      "method": "lp",
+      "accuracy": 70.26437721449986
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 1,
+      "method": "lpplusplus",
+      "accuracy": 91.71436358680839
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 1,
+      "method": "p0",
+      "accuracy": 92.34123739438539
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 1,
+      "method": "proker",
+      "accuracy": 88.49822840010903
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 1,
+      "method": "prolip",
+      "accuracy": 92.01417279912783
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 1,
+      "method": "svd",
+      "accuracy": 91.95966203325156
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 2,
+      "method": "comp_k2",
+      "accuracy": 91.71436358680839
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 2,
+      "method": "comp_param",
+      "accuracy": 92.23221586263287
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 2,
+      "method": "comp_rank",
+      "accuracy": 92.23221586263287
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 2,
+      "method": "lora_param",
+      "accuracy": 92.259471245571
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 2,
+      "method": "lora_rank",
+      "accuracy": 92.34123739438539
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 2,
+      "method": "lp",
+      "accuracy": 68.19296811120196
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 2,
+      "method": "lpplusplus",
+      "accuracy": 92.28672662850913
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 2,
+      "method": "p0",
+      "accuracy": 92.28672662850913
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 2,
+      "method": "proker",
+      "accuracy": 91.00572363041701
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 2,
+      "method": "prolip",
+      "accuracy": 92.42300354319978
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 2,
+      "method": "svd",
+      "accuracy": 91.71436358680839
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 3,
+      "method": "comp_k2",
+      "accuracy": 91.65985282093213
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 3,
+      "method": "comp_param",
+      "accuracy": 91.9869174161897
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 3,
+      "method": "comp_rank",
+      "accuracy": 92.01417279912783
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 3,
+      "method": "lora_param",
+      "accuracy": 92.01417279912783
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 3,
+      "method": "lora_rank",
+      "accuracy": 92.09593894794222
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 3,
+      "method": "lp",
+      "accuracy": 70.291632597438
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 3,
+      "method": "lpplusplus",
+      "accuracy": 91.68710820387027
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 3,
+      "method": "p0",
+      "accuracy": 92.0686835650041
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 3,
+      "method": "proker",
+      "accuracy": 91.38729899155084
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 3,
+      "method": "prolip",
+      "accuracy": 92.01417279912783
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 3,
+      "method": "svd",
+      "accuracy": 90.8149359498501
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 1,
+      "method": "comp_k2",
+      "accuracy": 91.71436358680839
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 1,
+      "method": "comp_param",
+      "accuracy": 93.0771327337149
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 1,
+      "method": "comp_rank",
+      "accuracy": 93.1588988825293
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 1,
+      "method": "lora_param",
+      "accuracy": 93.04987735077678
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 1,
+      "method": "lora_rank",
+      "accuracy": 93.21340964840556
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 1,
+      "method": "lp",
+      "accuracy": 86.53584082856364
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 1,
+      "method": "lpplusplus",
+      "accuracy": 93.51321886072499
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 1,
+      "method": "p0",
+      "accuracy": 92.91360043608613
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 1,
+      "method": "proker",
+      "accuracy": 92.58653584082856
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 1,
+      "method": "prolip",
+      "accuracy": 91.63259743799401
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 1,
+      "method": "svd",
+      "accuracy": 92.15044971381847
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 2,
+      "method": "comp_k2",
+      "accuracy": 91.76887435268466
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 2,
+      "method": "comp_param",
+      "accuracy": 92.77732352139547
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 2,
+      "method": "comp_rank",
+      "accuracy": 92.64104660670482
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 2,
+      "method": "lora_param",
+      "accuracy": 92.6137912237667
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 2,
+      "method": "lora_rank",
+      "accuracy": 92.58653584082856
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 2,
+      "method": "lp",
+      "accuracy": 85.2275824475334
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 2,
+      "method": "lpplusplus",
+      "accuracy": 92.6137912237667
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 2,
+      "method": "p0",
+      "accuracy": 93.02262196783865
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 2,
+      "method": "proker",
+      "accuracy": 93.04987735077678
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 2,
+      "method": "prolip",
+      "accuracy": 92.69555737258108
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 2,
+      "method": "svd",
+      "accuracy": 92.28672662850913
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 3,
+      "method": "comp_k2",
+      "accuracy": 92.15044971381847
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 3,
+      "method": "comp_param",
+      "accuracy": 93.32243118015808
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 3,
+      "method": "comp_rank",
+      "accuracy": 93.29517579721995
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 3,
+      "method": "lora_param",
+      "accuracy": 93.45870809484873
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 3,
+      "method": "lora_rank",
+      "accuracy": 93.48596347778687
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 3,
+      "method": "lp",
+      "accuracy": 85.58190242572908
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 3,
+      "method": "lpplusplus",
+      "accuracy": 93.04987735077678
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 3,
+      "method": "p0",
+      "accuracy": 94.0583265194876
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 3,
+      "method": "proker",
+      "accuracy": 93.13164349959116
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 3,
+      "method": "prolip",
+      "accuracy": 93.75851730716816
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 3,
+      "method": "svd",
+      "accuracy": 92.31398201144727
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 1,
+      "method": "comp_k2",
+      "accuracy": 68.2015113350126
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 1,
+      "method": "comp_param",
+      "accuracy": 72.67002518891688
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 1,
+      "method": "comp_rank",
+      "accuracy": 73.28463476070529
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 1,
+      "method": "lora_param",
+      "accuracy": 71.31486146095718
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 1,
+      "method": "lora_rank",
+      "accuracy": 72.68010075566751
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 1,
+      "method": "lp",
+      "accuracy": 62.987405541561714
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 1,
+      "method": "lpplusplus",
+      "accuracy": 73.2544080604534
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 1,
+      "method": "p0",
+      "accuracy": 73.09823677581863
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 1,
+      "method": "proker",
+      "accuracy": 65.14357682619648
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 1,
+      "method": "prolip",
+      "accuracy": 72.64987405541562
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 1,
+      "method": "svd",
+      "accuracy": 66.62468513853904
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 2,
+      "method": "comp_k2",
+      "accuracy": 68.4735516372796
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 2,
+      "method": "comp_param",
+      "accuracy": 72.89672544080605
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 2,
+      "method": "comp_rank",
+      "accuracy": 73.01259445843829
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 2,
+      "method": "lora_param",
+      "accuracy": 72.13602015113351
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 2,
+      "method": "lora_rank",
+      "accuracy": 72.32241813602015
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 2,
+      "method": "lp",
+      "accuracy": 62.48362720403023
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 2,
+      "method": "lpplusplus",
+      "accuracy": 72.72544080604534
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 2,
+      "method": "p0",
+      "accuracy": 73.02770780856423
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 2,
+      "method": "proker",
+      "accuracy": 65.37027707808564
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 2,
+      "method": "prolip",
+      "accuracy": 72.31738035264483
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 2,
+      "method": "svd",
+      "accuracy": 66.52392947103274
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 3,
+      "method": "comp_k2",
+      "accuracy": 67.70780856423174
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 3,
+      "method": "comp_param",
+      "accuracy": 72.11083123425692
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 3,
+      "method": "comp_rank",
+      "accuracy": 71.90428211586902
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 3,
+      "method": "lora_param",
+      "accuracy": 71.43576826196474
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 3,
+      "method": "lora_rank",
+      "accuracy": 71.4911838790932
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 3,
+      "method": "lp",
+      "accuracy": 62.76070528967254
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 3,
+      "method": "lpplusplus",
+      "accuracy": 72.272040302267
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 3,
+      "method": "p0",
+      "accuracy": 72.21662468513854
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 3,
+      "method": "proker",
+      "accuracy": 65.55163727959697
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 3,
+      "method": "prolip",
+      "accuracy": 71.51133501259446
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 3,
+      "method": "svd",
+      "accuracy": 66.55415617128463
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 1,
+      "method": "comp_k2",
+      "accuracy": 69.6926952141058
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 1,
+      "method": "comp_param",
+      "accuracy": 76.10075566750629
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 1,
+      "method": "comp_rank",
+      "accuracy": 76.16120906801008
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 1,
+      "method": "lora_param",
+      "accuracy": 75.24937027707809
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 1,
+      "method": "lora_rank",
+      "accuracy": 75.87405541561712
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 1,
+      "method": "lp",
+      "accuracy": 73.21410579345088
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 1,
+      "method": "lpplusplus",
+      "accuracy": 76.18136020151134
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 1,
+      "method": "p0",
+      "accuracy": 76.5088161209068
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 1,
+      "method": "prolip",
+      "accuracy": 75.81863979848866
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 1,
+      "method": "svd",
+      "accuracy": 66.62468513853904
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 2,
+      "method": "comp_k2",
+      "accuracy": 69.54156171284635
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 2,
+      "method": "comp_param",
+      "accuracy": 76.24685138539043
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 2,
+      "method": "comp_rank",
+      "accuracy": 76.28211586901763
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 2,
+      "method": "lora_param",
+      "accuracy": 75.17380352644837
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 2,
+      "method": "lora_rank",
+      "accuracy": 75.34508816120906
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 2,
+      "method": "lp",
+      "accuracy": 73.15869017632242
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 2,
+      "method": "lpplusplus",
+      "accuracy": 76.33753148614609
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 2,
+      "method": "p0",
+      "accuracy": 76.11586901763224
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 2,
+      "method": "prolip",
+      "accuracy": 75.90428211586902
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 2,
+      "method": "svd",
+      "accuracy": 66.4382871536524
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 3,
+      "method": "comp_k2",
+      "accuracy": 69.73803526448363
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 3,
+      "method": "comp_param",
+      "accuracy": 75.83879093198992
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 3,
+      "method": "comp_rank",
+      "accuracy": 75.91435768261965
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 3,
+      "method": "lora_param",
+      "accuracy": 75.2896725440806
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 3,
+      "method": "lora_rank",
+      "accuracy": 75.63727959697734
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 3,
+      "method": "lp",
+      "accuracy": 73.00251889168766
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 3,
+      "method": "lpplusplus",
+      "accuracy": 76.23173803526448
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 3,
+      "method": "p0",
+      "accuracy": 76.2015113350126
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 3,
+      "method": "prolip",
+      "accuracy": 75.80856423173803
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 3,
+      "method": "svd",
+      "accuracy": 66.68010075566751
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 1,
+      "method": "comp_k2",
+      "accuracy": 69.97635933806147
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 1,
+      "method": "comp_param",
+      "accuracy": 73.1678486997636
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 1,
+      "method": "comp_rank",
+      "accuracy": 74.29078014184397
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 1,
+      "method": "lora_param",
+      "accuracy": 73.99527186761229
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 1,
+      "method": "lora_rank",
+      "accuracy": 74.34988179669031
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 1,
+      "method": "lp",
+      "accuracy": 65.2482269503546
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 1,
+      "method": "lpplusplus",
+      "accuracy": 73.40425531914893
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 1,
+      "method": "p0",
+      "accuracy": 75.35460992907801
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 1,
+      "method": "proker",
+      "accuracy": 73.1678486997636
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 1,
+      "method": "prolip",
+      "accuracy": 74.64539007092199
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 1,
+      "method": "svd",
+      "accuracy": 64.12529550827423
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 2,
+      "method": "comp_k2",
+      "accuracy": 69.50354609929079
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 2,
+      "method": "comp_param",
+      "accuracy": 71.45390070921985
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 2,
+      "method": "comp_rank",
+      "accuracy": 73.04964539007092
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 2,
+      "method": "lora_param",
+      "accuracy": 72.99054373522459
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 2,
+      "method": "lora_rank",
+      "accuracy": 73.04964539007092
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 2,
+      "method": "lp",
+      "accuracy": 65.54373522458629
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 2,
+      "method": "lpplusplus",
+      "accuracy": 71.8676122931442
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 2,
+      "method": "p0",
+      "accuracy": 73.93617021276596
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 2,
+      "method": "proker",
+      "accuracy": 72.34042553191489
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 2,
+      "method": "prolip",
+      "accuracy": 72.51773049645391
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 2,
+      "method": "svd",
+      "accuracy": 63.356973995271865
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 3,
+      "method": "comp_k2",
+      "accuracy": 66.548463356974
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 3,
+      "method": "comp_param",
+      "accuracy": 73.58156028368795
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 3,
+      "method": "comp_rank",
+      "accuracy": 70.98108747044917
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 3,
+      "method": "lora_param",
+      "accuracy": 71.92671394799055
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 3,
+      "method": "lora_rank",
+      "accuracy": 73.28605200945627
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 3,
+      "method": "lp",
+      "accuracy": 67.02127659574468
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 3,
+      "method": "lpplusplus",
+      "accuracy": 73.81796690307328
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 3,
+      "method": "p0",
+      "accuracy": 75.177304964539
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 3,
+      "method": "proker",
+      "accuracy": 73.99527186761229
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 3,
+      "method": "prolip",
+      "accuracy": 73.28605200945627
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "seed": 3,
+      "method": "svd",
+      "accuracy": 64.30260047281324
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 1,
+      "method": "comp_k2",
+      "accuracy": 73.10874704491725
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 1,
+      "method": "comp_param",
+      "accuracy": 77.54137115839244
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 1,
+      "method": "comp_rank",
+      "accuracy": 79.01891252955083
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 1,
+      "method": "lora_param",
+      "accuracy": 79.13711583924349
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 1,
+      "method": "lora_rank",
+      "accuracy": 80.37825059101655
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 1,
+      "method": "lp",
+      "accuracy": 77.77777777777777
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 1,
+      "method": "lpplusplus",
+      "accuracy": 79.01891252955083
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 1,
+      "method": "p0",
+      "accuracy": 81.32387706855792
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 1,
+      "method": "proker",
+      "accuracy": 81.67848699763593
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 1,
+      "method": "prolip",
+      "accuracy": 80.43735224586288
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 1,
+      "method": "svd",
+      "accuracy": 64.42080378250591
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 2,
+      "method": "comp_k2",
+      "accuracy": 73.81796690307328
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 2,
+      "method": "comp_param",
+      "accuracy": 76.4775413711584
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 2,
+      "method": "comp_rank",
+      "accuracy": 78.01418439716312
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 2,
+      "method": "lora_param",
+      "accuracy": 78.78250591016548
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 2,
+      "method": "lora_rank",
+      "accuracy": 78.90070921985816
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 2,
+      "method": "lp",
+      "accuracy": 77.06855791962175
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 2,
+      "method": "lpplusplus",
+      "accuracy": 78.1323877068558
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 2,
+      "method": "p0",
+      "accuracy": 79.84633569739952
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 2,
+      "method": "proker",
+      "accuracy": 79.13711583924349
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 2,
+      "method": "prolip",
+      "accuracy": 78.84160756501183
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 2,
+      "method": "svd",
+      "accuracy": 64.42080378250591
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 3,
+      "method": "comp_k2",
+      "accuracy": 74.17257683215131
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 3,
+      "method": "comp_param",
+      "accuracy": 77.12765957446808
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 3,
+      "method": "comp_rank",
+      "accuracy": 79.13711583924349
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 3,
+      "method": "lora_param",
+      "accuracy": 80.26004728132388
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 3,
+      "method": "lora_rank",
+      "accuracy": 80.79196217494089
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 3,
+      "method": "lp",
+      "accuracy": 77.48226950354609
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 3,
+      "method": "lpplusplus",
+      "accuracy": 79.01891252955083
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 3,
+      "method": "p0",
+      "accuracy": 81.20567375886525
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 3,
+      "method": "proker",
+      "accuracy": 79.84633569739952
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 3,
+      "method": "prolip",
+      "accuracy": 81.4420803782506
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "seed": 3,
+      "method": "svd",
+      "accuracy": 64.77541371158392
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 1,
+      "method": "comp_k2",
+      "accuracy": 66.9753086419753
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 1,
+      "method": "comp_param",
+      "accuracy": 66.9753086419753
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 1,
+      "method": "comp_rank",
+      "accuracy": 71.93827160493827
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 1,
+      "method": "lora_param",
+      "accuracy": 68.48148148148148
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 1,
+      "method": "lora_rank",
+      "accuracy": 74.25925925925925
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 1,
+      "method": "lp",
+      "accuracy": 71.1604938271605
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 1,
+      "method": "lpplusplus",
+      "accuracy": 65.1604938271605
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 1,
+      "method": "p0",
+      "accuracy": 78.51851851851852
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 1,
+      "method": "proker",
+      "accuracy": 78.87654320987654
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 1,
+      "method": "prolip",
+      "accuracy": 78.4320987654321
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 1,
+      "method": "svd",
+      "accuracy": 49.333333333333336
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 2,
+      "method": "comp_k2",
+      "accuracy": 56.81481481481482
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 2,
+      "method": "comp_param",
+      "accuracy": 56.81481481481482
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 2,
+      "method": "comp_rank",
+      "accuracy": 64.04938271604938
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 2,
+      "method": "lora_param",
+      "accuracy": 69.44444444444444
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 2,
+      "method": "lora_rank",
+      "accuracy": 74.4074074074074
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 2,
+      "method": "lp",
+      "accuracy": 65.07407407407408
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 2,
+      "method": "lpplusplus",
+      "accuracy": 64.17283950617283
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 2,
+      "method": "p0",
+      "accuracy": 74.01234567901234
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 2,
+      "method": "proker",
+      "accuracy": 77.29629629629629
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 2,
+      "method": "prolip",
+      "accuracy": 74.77777777777777
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 2,
+      "method": "svd",
+      "accuracy": 48.67901234567901
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 3,
+      "method": "comp_k2",
+      "accuracy": 64.11111111111111
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 3,
+      "method": "comp_param",
+      "accuracy": 64.11111111111111
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 3,
+      "method": "comp_rank",
+      "accuracy": 71.50617283950618
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 3,
+      "method": "lora_param",
+      "accuracy": 72.28395061728395
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 3,
+      "method": "lora_rank",
+      "accuracy": 76.23456790123457
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 3,
+      "method": "lp",
+      "accuracy": 73.06172839506173
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 3,
+      "method": "lpplusplus",
+      "accuracy": 73.03703703703704
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 3,
+      "method": "p0",
+      "accuracy": 76.54320987654322
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 3,
+      "method": "proker",
+      "accuracy": 79.58024691358025
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 3,
+      "method": "prolip",
+      "accuracy": 82.14814814814815
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "seed": 3,
+      "method": "svd",
+      "accuracy": 48.80246913580247
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 1,
+      "method": "comp_k2",
+      "accuracy": 72.22222222222223
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 1,
+      "method": "comp_param",
+      "accuracy": 72.22222222222223
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 1,
+      "method": "comp_rank",
+      "accuracy": 83.23456790123457
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 1,
+      "method": "lora_param",
+      "accuracy": 82.04938271604938
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 1,
+      "method": "lora_rank",
+      "accuracy": 87.03703703703704
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 1,
+      "method": "lp",
+      "accuracy": 85.29629629629629
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 1,
+      "method": "lpplusplus",
+      "accuracy": 84.37037037037037
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 1,
+      "method": "p0",
+      "accuracy": 87.53086419753086
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 1,
+      "method": "proker",
+      "accuracy": 88.76543209876543
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 1,
+      "method": "prolip",
+      "accuracy": 88.82716049382717
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 1,
+      "method": "svd",
+      "accuracy": 48.76543209876543
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 2,
+      "method": "comp_k2",
+      "accuracy": 73.54320987654322
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 2,
+      "method": "comp_param",
+      "accuracy": 73.54320987654322
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 2,
+      "method": "comp_rank",
+      "accuracy": 83.50617283950618
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 2,
+      "method": "lora_param",
+      "accuracy": 82.07407407407408
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 2,
+      "method": "lora_rank",
+      "accuracy": 85.50617283950618
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 2,
+      "method": "lp",
+      "accuracy": 84.9753086419753
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 2,
+      "method": "lpplusplus",
+      "accuracy": 82.93827160493827
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 2,
+      "method": "p0",
+      "accuracy": 87.29629629629629
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 2,
+      "method": "proker",
+      "accuracy": 89.07407407407408
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 2,
+      "method": "prolip",
+      "accuracy": 87.44444444444444
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 2,
+      "method": "svd",
+      "accuracy": 49.098765432098766
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 3,
+      "method": "comp_k2",
+      "accuracy": 74.1604938271605
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 3,
+      "method": "comp_param",
+      "accuracy": 74.1604938271605
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 3,
+      "method": "comp_rank",
+      "accuracy": 83.23456790123457
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 3,
+      "method": "lora_param",
+      "accuracy": 83.60493827160494
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 3,
+      "method": "lora_rank",
+      "accuracy": 86.69135802469135
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 3,
+      "method": "lp",
+      "accuracy": 85.87654320987654
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 3,
+      "method": "lpplusplus",
+      "accuracy": 85.9753086419753
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 3,
+      "method": "p0",
+      "accuracy": 88.29629629629629
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 3,
+      "method": "proker",
+      "accuracy": 89.03703703703704
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 3,
+      "method": "prolip",
+      "accuracy": 88.55555555555556
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "seed": 3,
+      "method": "svd",
+      "accuracy": 49.51851851851852
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 1,
+      "method": "comp_k2",
+      "accuracy": 95.17579721995094
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 1,
+      "method": "comp_param",
+      "accuracy": 95.20305260288907
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 1,
+      "method": "comp_rank",
+      "accuracy": 95.12128645407468
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 1,
+      "method": "lora_param",
+      "accuracy": 94.93049877350776
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 1,
+      "method": "lora_rank",
+      "accuracy": 95.06677568819842
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 1,
+      "method": "lp",
+      "accuracy": 85.6909239574816
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 1,
+      "method": "lpplusplus",
+      "accuracy": 94.65794494412647
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 1,
+      "method": "p0",
+      "accuracy": 95.25756336876533
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 1,
+      "method": "proker",
+      "accuracy": 94.90324339056964
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 1,
+      "method": "prolip",
+      "accuracy": 95.2303079858272
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 1,
+      "method": "svd",
+      "accuracy": 94.71245571000273
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 2,
+      "method": "comp_k2",
+      "accuracy": 94.90324339056964
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 2,
+      "method": "comp_param",
+      "accuracy": 94.98500953938402
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 2,
+      "method": "comp_rank",
+      "accuracy": 95.01226492232216
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 2,
+      "method": "lora_param",
+      "accuracy": 94.71245571000273
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 2,
+      "method": "lora_rank",
+      "accuracy": 94.68520032706459
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 2,
+      "method": "lp",
+      "accuracy": 85.39111474516217
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 2,
+      "method": "lpplusplus",
+      "accuracy": 94.76696647587899
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 2,
+      "method": "p0",
+      "accuracy": 94.84873262469338
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 2,
+      "method": "proker",
+      "accuracy": 94.84873262469338
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 2,
+      "method": "prolip",
+      "accuracy": 94.68520032706459
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 2,
+      "method": "svd",
+      "accuracy": 94.9577541564459
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 3,
+      "method": "comp_k2",
+      "accuracy": 94.60343417825021
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 3,
+      "method": "comp_param",
+      "accuracy": 94.71245571000273
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 3,
+      "method": "comp_rank",
+      "accuracy": 94.79422185881711
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 3,
+      "method": "lora_param",
+      "accuracy": 94.9577541564459
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 3,
+      "method": "lora_rank",
+      "accuracy": 94.98500953938402
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 3,
+      "method": "lp",
+      "accuracy": 83.64677023712183
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 3,
+      "method": "lpplusplus",
+      "accuracy": 95.20305260288907
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 3,
+      "method": "p0",
+      "accuracy": 94.79422185881711
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 3,
+      "method": "proker",
+      "accuracy": 94.9577541564459
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 3,
+      "method": "prolip",
+      "accuracy": 94.9577541564459
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "seed": 3,
+      "method": "svd",
+      "accuracy": 94.76696647587899
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 1,
+      "method": "comp_k2",
+      "accuracy": 94.71245571000273
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 1,
+      "method": "comp_param",
+      "accuracy": 95.39384028345599
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 1,
+      "method": "comp_rank",
+      "accuracy": 94.90324339056964
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 1,
+      "method": "lora_param",
+      "accuracy": 95.03952030526028
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 1,
+      "method": "lora_rank",
+      "accuracy": 95.06677568819842
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 1,
+      "method": "lp",
+      "accuracy": 92.64104660670482
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 1,
+      "method": "lpplusplus",
+      "accuracy": 94.82147724175525
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 1,
+      "method": "p0",
+      "accuracy": 95.20305260288907
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 1,
+      "method": "proker",
+      "accuracy": 95.03952030526028
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 1,
+      "method": "prolip",
+      "accuracy": 95.31207413464159
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 1,
+      "method": "svd",
+      "accuracy": 94.79422185881711
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 2,
+      "method": "comp_k2",
+      "accuracy": 95.33932951757973
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 2,
+      "method": "comp_param",
+      "accuracy": 95.44835104933225
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 2,
+      "method": "comp_rank",
+      "accuracy": 95.36658490051785
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 2,
+      "method": "lora_param",
+      "accuracy": 95.03952030526028
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 2,
+      "method": "lora_rank",
+      "accuracy": 95.14854183701281
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 2,
+      "method": "lp",
+      "accuracy": 92.15044971381847
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 2,
+      "method": "lpplusplus",
+      "accuracy": 94.9577541564459
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 2,
+      "method": "p0",
+      "accuracy": 94.98500953938402
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 2,
+      "method": "proker",
+      "accuracy": 95.28481875170345
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 2,
+      "method": "prolip",
+      "accuracy": 95.06677568819842
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 2,
+      "method": "svd",
+      "accuracy": 95.14854183701281
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 3,
+      "method": "comp_k2",
+      "accuracy": 95.09403107113656
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 3,
+      "method": "comp_param",
+      "accuracy": 95.31207413464159
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 3,
+      "method": "comp_rank",
+      "accuracy": 95.06677568819842
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 3,
+      "method": "lora_param",
+      "accuracy": 94.93049877350776
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 3,
+      "method": "lora_rank",
+      "accuracy": 94.63068956118833
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 3,
+      "method": "lp",
+      "accuracy": 91.30553284273644
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 3,
+      "method": "lpplusplus",
+      "accuracy": 94.63068956118833
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 3,
+      "method": "p0",
+      "accuracy": 95.06677568819842
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 3,
+      "method": "proker",
+      "accuracy": 95.36658490051785
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 3,
+      "method": "prolip",
+      "accuracy": 95.01226492232216
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "seed": 3,
+      "method": "svd",
+      "accuracy": 95.03952030526028
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 1,
+      "method": "comp_k2",
+      "accuracy": 74.36272040302266
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 1,
+      "method": "comp_param",
+      "accuracy": 76.9471032745592
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 1,
+      "method": "comp_rank",
+      "accuracy": 77.16372795969774
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 1,
+      "method": "lora_param",
+      "accuracy": 76.98740554156171
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 1,
+      "method": "lora_rank",
+      "accuracy": 77.02770780856423
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 1,
+      "method": "lp",
+      "accuracy": 68.7455919395466
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 1,
+      "method": "lpplusplus",
+      "accuracy": 77.52141057934509
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 1,
+      "method": "p0",
+      "accuracy": 77.45088161209068
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 1,
+      "method": "proker",
+      "accuracy": 74.39294710327457
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 1,
+      "method": "prolip",
+      "accuracy": 77.09319899244332
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 1,
+      "method": "svd",
+      "accuracy": 73.00251889168766
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 2,
+      "method": "comp_k2",
+      "accuracy": 74.65491183879094
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 2,
+      "method": "comp_param",
+      "accuracy": 76.92191435768262
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 2,
+      "method": "comp_rank",
+      "accuracy": 77.07304785894206
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 2,
+      "method": "lora_param",
+      "accuracy": 76.76574307304786
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 2,
+      "method": "lora_rank",
+      "accuracy": 76.82619647355163
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 2,
+      "method": "lp",
+      "accuracy": 67.46599496221663
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 2,
+      "method": "lpplusplus",
+      "accuracy": 77.44584382871537
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 2,
+      "method": "p0",
+      "accuracy": 77.24937027707809
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 2,
+      "method": "proker",
+      "accuracy": 74.13602015113351
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 2,
+      "method": "prolip",
+      "accuracy": 76.91687657430731
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 2,
+      "method": "svd",
+      "accuracy": 72.70025188916877
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 3,
+      "method": "comp_k2",
+      "accuracy": 74.82115869017632
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 3,
+      "method": "comp_param",
+      "accuracy": 76.80604534005037
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 3,
+      "method": "comp_rank",
+      "accuracy": 76.97229219143577
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 3,
+      "method": "lora_param",
+      "accuracy": 76.58942065491183
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 3,
+      "method": "lora_rank",
+      "accuracy": 76.6146095717884
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 3,
+      "method": "lp",
+      "accuracy": 68.52392947103274
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 3,
+      "method": "lpplusplus",
+      "accuracy": 77.3249370277078
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 3,
+      "method": "p0",
+      "accuracy": 77.1234256926952
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 3,
+      "method": "proker",
+      "accuracy": 74.42317380352645
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 3,
+      "method": "prolip",
+      "accuracy": 76.82115869017632
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "seed": 3,
+      "method": "svd",
+      "accuracy": 72.68513853904282
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 1,
+      "method": "comp_k2",
+      "accuracy": 76.35768261964735
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 1,
+      "method": "comp_param",
+      "accuracy": 79.20403022670025
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 1,
+      "method": "comp_rank",
+      "accuracy": 79.48110831234257
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 1,
+      "method": "lora_param",
+      "accuracy": 79.5969773299748
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 1,
+      "method": "lora_rank",
+      "accuracy": 78.26700251889169
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 1,
+      "method": "lp",
+      "accuracy": 77.35012594458438
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 1,
+      "method": "lpplusplus",
+      "accuracy": 80.23173803526448
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 1,
+      "method": "p0",
+      "accuracy": 80.04534005037783
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 1,
+      "method": "prolip",
+      "accuracy": 79.70780856423174
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 1,
+      "method": "svd",
+      "accuracy": 73.06801007556675
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 2,
+      "method": "comp_k2",
+      "accuracy": 76.26700251889169
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 2,
+      "method": "comp_param",
+      "accuracy": 79.360201511335
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 2,
+      "method": "comp_rank",
+      "accuracy": 79.66246851385391
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 2,
+      "method": "lora_param",
+      "accuracy": 79.41057934508817
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 2,
+      "method": "lora_rank",
+      "accuracy": 79.48110831234257
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 2,
+      "method": "lp",
+      "accuracy": 77.13853904282117
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 2,
+      "method": "lpplusplus",
+      "accuracy": 80.1662468513854
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 2,
+      "method": "p0",
+      "accuracy": 79.90931989924434
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 2,
+      "method": "prolip",
+      "accuracy": 79.42569269521411
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 2,
+      "method": "svd",
+      "accuracy": 73.06297229219143
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 3,
+      "method": "comp_k2",
+      "accuracy": 76.26700251889169
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 3,
+      "method": "comp_param",
+      "accuracy": 79.1234256926952
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 3,
+      "method": "comp_rank",
+      "accuracy": 79.29974811083123
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 3,
+      "method": "lora_param",
+      "accuracy": 79.42569269521411
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 3,
+      "method": "lora_rank",
+      "accuracy": 79.48110831234257
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 3,
+      "method": "lp",
+      "accuracy": 76.89672544080605
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 3,
+      "method": "lpplusplus",
+      "accuracy": 79.75818639798489
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 3,
+      "method": "p0",
+      "accuracy": 79.8942065491184
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 3,
+      "method": "prolip",
+      "accuracy": 79.60705289672543
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "seed": 3,
+      "method": "svd",
+      "accuracy": 73.0528967254408
+    }
+  ],
+  "selected_coordinates": [
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "methods": {
+        "p0": {
+          "mean": 63.908589440504336,
+          "sample_sd": 1.4015111435644143,
+          "values": [
+            62.4113475177305,
+            64.12529550827423,
+            65.18912529550828
+          ]
+        },
+        "r0": {
+          "mean": 62.27344365642238,
+          "sample_sd": 1.241603723923462,
+          "values": [
+            61.05200945626478,
+            62.234042553191486,
+            63.53427895981088
+          ]
+        },
+        "r1": {
+          "mean": 62.8053585500394,
+          "sample_sd": 1.2059248181877795,
+          "values": [
+            61.7612293144208,
+            62.529550827423165,
+            64.12529550827423
+          ]
+        },
+        "r2": {
+          "mean": 62.371946414499604,
+          "sample_sd": 0.29747180596023504,
+          "values": [
+            62.05673758865248,
+            62.4113475177305,
+            62.64775413711584
+          ]
+        }
+      }
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "methods": {
+        "p0": {
+          "mean": 72.9117415287628,
+          "sample_sd": 0.9608942788224767,
+          "values": [
+            73.10874704491725,
+            73.75886524822695,
+            71.8676122931442
+          ]
+        },
+        "r0": {
+          "mean": 70.40977147360127,
+          "sample_sd": 0.5740268827554589,
+          "values": [
+            71.04018912529551,
+            69.91725768321513,
+            70.27186761229315
+          ]
+        },
+        "r1": {
+          "mean": 70.78408195429472,
+          "sample_sd": 0.44359063235609464,
+          "values": [
+            71.04018912529551,
+            71.04018912529551,
+            70.27186761229315
+          ]
+        },
+        "r2": {
+          "mean": 68.79432624113475,
+          "sample_sd": 0.6712657619149246,
+          "values": [
+            68.49881796690308,
+            68.32151300236407,
+            69.56264775413712
+          ]
+        }
+      }
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "methods": {
+        "p0": {
+          "mean": 76.35802469135803,
+          "sample_sd": 2.2587869708064208,
+          "values": [
+            78.51851851851852,
+            74.01234567901234,
+            76.54320987654322
+          ]
+        },
+        "r0": {
+          "mean": 62.25102880658436,
+          "sample_sd": 3.5700649881637205,
+          "values": [
+            64.51851851851852,
+            58.135802469135804,
+            64.09876543209876
+          ]
+        },
+        "r1": {
+          "mean": 67.1604938271605,
+          "sample_sd": 3.5956035068636707,
+          "values": [
+            63.074074074074076,
+            68.5679012345679,
+            69.8395061728395
+          ]
+        },
+        "r2": {
+          "mean": 72.25925925925927,
+          "sample_sd": 0.652454827739452,
+          "values": [
+            71.5679012345679,
+            72.34567901234568,
+            72.8641975308642
+          ]
+        }
+      }
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "methods": {
+        "p0": {
+          "mean": 87.70781893004114,
+          "sample_sd": 0.5229576780374683,
+          "values": [
+            87.53086419753086,
+            87.29629629629629,
+            88.29629629629629
+          ]
+        },
+        "r0": {
+          "mean": 67.59670781893004,
+          "sample_sd": 1.299897017560141,
+          "values": [
+            66.45679012345678,
+            67.32098765432099,
+            69.01234567901234
+          ]
+        },
+        "r1": {
+          "mean": 79.65020576131687,
+          "sample_sd": 1.5378342586845506,
+          "values": [
+            77.91358024691358,
+            80.19753086419753,
+            80.8395061728395
+          ]
+        },
+        "r2": {
+          "mean": 81.94650205761317,
+          "sample_sd": 1.8646607769341457,
+          "values": [
+            81.39506172839506,
+            80.41975308641975,
+            84.0246913580247
+          ]
+        }
+      }
+    }
+  ],
+  "fixed_coordinates": [
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "methods": {
+        "p0": {
+          "mean": 64.18439716312056,
+          "sample_sd": 1.3898316804142854,
+          "values": [
+            63.2387706855792,
+            63.53427895981088,
+            65.78014184397163
+          ]
+        },
+        "r0": {
+          "mean": 55.92986603624902,
+          "sample_sd": 0.7051036315277106,
+          "values": [
+            55.141843971631204,
+            56.146572104018915,
+            56.501182033096924
+          ]
+        },
+        "r1": {
+          "mean": 61.938534278959814,
+          "sample_sd": 1.050613997318625,
+          "values": [
+            61.111111111111114,
+            61.5839243498818,
+            63.12056737588652
+          ]
+        },
+        "r2": {
+          "mean": 61.38691883372734,
+          "sample_sd": 0.6798831334411896,
+          "values": [
+            60.69739952718676,
+            62.05673758865248,
+            61.406619385342786
+          ]
+        }
+      }
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "methods": {
+        "p0": {
+          "mean": 73.10874704491725,
+          "sample_sd": 0.5152362817423934,
+          "values": [
+            72.75413711583924,
+            73.69976359338061,
+            72.87234042553192
+          ]
+        },
+        "r0": {
+          "mean": 65.0709219858156,
+          "sample_sd": 0.5152362817423967,
+          "values": [
+            64.47990543735224,
+            65.42553191489361,
+            65.30732860520095
+          ]
+        },
+        "r1": {
+          "mean": 70.27186761229315,
+          "sample_sd": 0.2364066193853418,
+          "values": [
+            70.50827423167848,
+            70.27186761229315,
+            70.0354609929078
+          ]
+        },
+        "r2": {
+          "mean": 68.40031520882584,
+          "sample_sd": 0.8024196948154552,
+          "values": [
+            67.96690307328605,
+            67.90780141843972,
+            69.32624113475177
+          ]
+        }
+      }
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "methods": {
+        "p0": {
+          "mean": 74.79423868312757,
+          "sample_sd": 1.5174809932092452,
+          "values": [
+            73.82716049382717,
+            74.01234567901234,
+            76.54320987654322
+          ]
+        },
+        "r0": {
+          "mean": 49.47325102880659,
+          "sample_sd": 0.1563244437302257,
+          "values": [
+            49.44444444444444,
+            49.333333333333336,
+            49.641975308641975
+          ]
+        },
+        "r1": {
+          "mean": 62.160493827160494,
+          "sample_sd": 1.5504029890453588,
+          "values": [
+            63.074074074074076,
+            60.370370370370374,
+            63.03703703703704
+          ]
+        },
+        "r2": {
+          "mean": 69.2880658436214,
+          "sample_sd": 0.620280791190349,
+          "values": [
+            69.0,
+            68.8641975308642,
+            70.0
+          ]
+        }
+      }
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "methods": {
+        "p0": {
+          "mean": 85.67078189300412,
+          "sample_sd": 0.7422138986305991,
+          "values": [
+            84.81481481481481,
+            86.06172839506173,
+            86.1358024691358
+          ]
+        },
+        "r0": {
+          "mean": 53.10288065843621,
+          "sample_sd": 0.38377657389413183,
+          "values": [
+            52.925925925925924,
+            52.839506172839506,
+            53.54320987654321
+          ]
+        },
+        "r1": {
+          "mean": 67.13580246913581,
+          "sample_sd": 1.3183890443666648,
+          "values": [
+            66.0246913580247,
+            66.79012345679013,
+            68.5925925925926
+          ]
+        },
+        "r2": {
+          "mean": 79.6872427983539,
+          "sample_sd": 1.5325226646364307,
+          "values": [
+            77.92592592592592,
+            80.41975308641975,
+            80.71604938271605
+          ]
+        }
+      }
+    }
+  ],
+  "normalization_regularization": [
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "methods": {
+        "p0": {
+          "mean": 63.908589440504336,
+          "sample_sd": 1.4015111435644143,
+          "values": [
+            62.4113475177305,
+            64.12529550827423,
+            65.18912529550828
+          ]
+        },
+        "dynamic_ci": {
+          "mean": 64.20409771473601,
+          "sample_sd": 1.2117040437101507,
+          "values": [
+            63.47517730496454,
+            63.53427895981088,
+            65.60283687943263
+          ]
+        },
+        "fixed_ci": {
+          "mean": 63.55397951142632,
+          "sample_sd": 2.127933175648986,
+          "values": [
+            61.406619385342786,
+            63.593380614657214,
+            65.66193853427896
+          ]
+        },
+        "fixed_disp": {
+          "mean": 63.829787234042556,
+          "sample_sd": 1.0785039947337263,
+          "values": [
+            63.12056737588652,
+            63.297872340425535,
+            65.0709219858156
+          ]
+        },
+        "r0": {
+          "mean": 62.27344365642238,
+          "sample_sd": 1.241603723923462,
+          "values": [
+            61.05200945626478,
+            62.234042553191486,
+            63.53427895981088
+          ]
+        }
+      }
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "methods": {
+        "p0": {
+          "mean": 72.9117415287628,
+          "sample_sd": 0.9608942788224767,
+          "values": [
+            73.10874704491725,
+            73.75886524822695,
+            71.8676122931442
+          ]
+        },
+        "dynamic_ci": {
+          "mean": 73.38455476753349,
+          "sample_sd": 0.3562478589445475,
+          "values": [
+            73.3451536643026,
+            73.75886524822695,
+            73.04964539007092
+          ]
+        },
+        "fixed_ci": {
+          "mean": 73.14814814814815,
+          "sample_sd": 0.4151163811210733,
+          "values": [
+            73.10874704491725,
+            73.58156028368795,
+            72.75413711583924
+          ]
+        },
+        "fixed_disp": {
+          "mean": 73.1678486997636,
+          "sample_sd": 0.563793854265331,
+          "values": [
+            73.22695035460993,
+            73.69976359338061,
+            72.57683215130024
+          ]
+        },
+        "r0": {
+          "mean": 70.40977147360127,
+          "sample_sd": 0.5740268827554589,
+          "values": [
+            71.04018912529551,
+            69.91725768321513,
+            70.27186761229315
+          ]
+        }
+      }
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "methods": {
+        "p0": {
+          "mean": 76.35802469135803,
+          "sample_sd": 2.2587869708064208,
+          "values": [
+            78.51851851851852,
+            74.01234567901234,
+            76.54320987654322
+          ]
+        },
+        "dynamic_ci": {
+          "mean": 76.22633744855968,
+          "sample_sd": 1.3836710399942078,
+          "values": [
+            74.62962962962963,
+            76.9753086419753,
+            77.07407407407408
+          ]
+        },
+        "fixed_ci": {
+          "mean": 76.78600823045268,
+          "sample_sd": 0.2382214919902257,
+          "values": [
+            76.51851851851852,
+            76.8641975308642,
+            76.9753086419753
+          ]
+        },
+        "fixed_disp": {
+          "mean": 75.42798353909465,
+          "sample_sd": 1.2968448770641057,
+          "values": [
+            75.8395061728395,
+            73.9753086419753,
+            76.46913580246914
+          ]
+        },
+        "r0": {
+          "mean": 62.25102880658436,
+          "sample_sd": 3.5700649881637205,
+          "values": [
+            64.51851851851852,
+            58.135802469135804,
+            64.09876543209876
+          ]
+        }
+      }
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "methods": {
+        "p0": {
+          "mean": 87.70781893004114,
+          "sample_sd": 0.5229576780374683,
+          "values": [
+            87.53086419753086,
+            87.29629629629629,
+            88.29629629629629
+          ]
+        },
+        "dynamic_ci": {
+          "mean": 87.1275720164609,
+          "sample_sd": 0.30299358245596975,
+          "values": [
+            87.30864197530865,
+            87.29629629629629,
+            86.77777777777777
+          ]
+        },
+        "fixed_ci": {
+          "mean": 87.34979423868313,
+          "sample_sd": 0.9902999545079197,
+          "values": [
+            87.19753086419753,
+            86.44444444444444,
+            88.4074074074074
+          ]
+        },
+        "fixed_disp": {
+          "mean": 87.4320987654321,
+          "sample_sd": 0.6742820644158725,
+          "values": [
+            86.92592592592592,
+            87.17283950617283,
+            88.19753086419753
+          ]
+        },
+        "r0": {
+          "mean": 67.59670781893004,
+          "sample_sd": 1.299897017560141,
+          "values": [
+            66.45679012345678,
+            67.32098765432099,
+            69.01234567901234
+          ]
+        }
+      }
+    }
+  ],
+  "position": [
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "methods": {
+        "p0_output": {
+          "mean": 74.822695035461,
+          "sample_sd": 0.7728544226135917,
+          "values": [
+            75.35460992907801,
+            73.93617021276596,
+            75.177304964539
+          ]
+        },
+        "prolip_output": {
+          "mean": 73.48305752561072,
+          "sample_sd": 1.077423870281742,
+          "values": [
+            74.64539007092199,
+            72.51773049645391,
+            73.28605200945627
+          ]
+        },
+        "p0_fc2": {
+          "mean": 73.22695035460993,
+          "sample_sd": 1.9160242408330244,
+          "values": [
+            74.94089834515367,
+            73.58156028368795,
+            71.15839243498817
+          ]
+        },
+        "prolip_fc2": {
+          "mean": 72.71473601260836,
+          "sample_sd": 1.3864766201665053,
+          "values": [
+            73.81796690307328,
+            73.1678486997636,
+            71.15839243498817
+          ]
+        }
+      }
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "methods": {
+        "p0_output": {
+          "mean": 80.79196217494089,
+          "sample_sd": 0.821066429636514,
+          "values": [
+            81.32387706855792,
+            79.84633569739952,
+            81.20567375886525
+          ]
+        },
+        "prolip_output": {
+          "mean": 80.24034672970843,
+          "sample_sd": 1.3113821308623002,
+          "values": [
+            80.43735224586288,
+            78.84160756501183,
+            81.4420803782506
+          ]
+        },
+        "p0_fc2": {
+          "mean": 79.3538219070134,
+          "sample_sd": 0.5491473547977258,
+          "values": [
+            79.72813238770685,
+            78.72340425531915,
+            79.60992907801419
+          ]
+        },
+        "prolip_fc2": {
+          "mean": 78.4869976359338,
+          "sample_sd": 0.5152362817424015,
+          "values": [
+            78.72340425531915,
+            77.89598108747045,
+            78.84160756501183
+          ]
+        }
+      }
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "methods": {
+        "p0_output": {
+          "mean": 76.35802469135803,
+          "sample_sd": 2.2587869708064208,
+          "values": [
+            78.51851851851852,
+            74.01234567901234,
+            76.54320987654322
+          ]
+        },
+        "prolip_output": {
+          "mean": 78.45267489711934,
+          "sample_sd": 3.685228267286141,
+          "values": [
+            78.4320987654321,
+            74.77777777777777,
+            82.14814814814815
+          ]
+        },
+        "p0_fc2": {
+          "mean": 69.11934156378601,
+          "sample_sd": 3.2719620893648385,
+          "values": [
+            69.81481481481481,
+            65.55555555555556,
+            71.98765432098766
+          ]
+        },
+        "prolip_fc2": {
+          "mean": 70.96296296296296,
+          "sample_sd": 2.1737862696049164,
+          "values": [
+            69.96296296296296,
+            73.45679012345678,
+            69.46913580246914
+          ]
+        }
+      }
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "methods": {
+        "p0_output": {
+          "mean": 87.70781893004114,
+          "sample_sd": 0.5229576780374683,
+          "values": [
+            87.53086419753086,
+            87.29629629629629,
+            88.29629629629629
+          ]
+        },
+        "prolip_output": {
+          "mean": 88.27572016460906,
+          "sample_sd": 0.7326027592254734,
+          "values": [
+            88.82716049382717,
+            87.44444444444444,
+            88.55555555555556
+          ]
+        },
+        "p0_fc2": {
+          "mean": 84.17283950617283,
+          "sample_sd": 1.2973540657879266,
+          "values": [
+            82.76543209876543,
+            84.4320987654321,
+            85.32098765432099
+          ]
+        },
+        "prolip_fc2": {
+          "mean": 84.5679012345679,
+          "sample_sd": 0.6425685767739778,
+          "values": [
+            83.82716049382717,
+            84.9753086419753,
+            84.90123456790124
+          ]
+        }
+      }
+    }
+  ],
+  "paired": [
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "method": "lp",
+      "mean": 8.293932230102444,
+      "sample_sd": 1.0411513208608218,
+      "values": [
+        7.446808510638299,
+        9.456264775413715,
+        7.9787234042553195
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "method": "lp",
+      "mean": 4.196217494089832,
+      "sample_sd": 0.6254731231831184,
+      "values": [
+        3.486997635933804,
+        4.66903073286052,
+        4.432624113475171
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "method": "lp",
+      "mean": 10.172839506172844,
+      "sample_sd": 3.0061665018819292,
+      "values": [
+        7.061728395061735,
+        13.061728395061735,
+        10.395061728395063
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "method": "lp",
+      "mean": 3.037037037037033,
+      "sample_sd": 0.1054815277199678,
+      "values": [
+        3.135802469135797,
+        3.0493827160493794,
+        2.925925925925924
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "method": "lp",
+      "mean": 22.649223221586265,
+      "sample_sd": 1.2599535929491625,
+      "values": [
+        22.07686017988553,
+        24.093758517307165,
+        21.777050967566097
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "method": "lp",
+      "mean": 7.5497410738620845,
+      "sample_sd": 1.0706197515073435,
+      "values": [
+        6.377759607522492,
+        7.795039520305252,
+        8.47642409375851
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "method": "lp",
+      "mean": 10.036943744752307,
+      "sample_sd": 0.547830471093984,
+      "values": [
+        10.11083123425692,
+        10.544080604534003,
+        9.455919395465997
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "method": "lp",
+      "mean": 3.1502938706968897,
+      "sample_sd": 0.17395556693307254,
+      "values": [
+        3.294710327455917,
+        2.957178841309812,
+        3.19899244332494
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "method": "lpplusplus",
+      "mean": 1.6745468873128455,
+      "sample_sd": 1.0445008779993377,
+      "values": [
+        0.4728132387706836,
+        2.1867612293144205,
+        2.364066193853432
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "method": "lpplusplus",
+      "mean": 1.6154452324665083,
+      "sample_sd": 0.6065722741663002,
+      "values": [
+        2.1276595744680833,
+        1.7730496453900741,
+        0.9456264775413672
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "method": "lpplusplus",
+      "mean": 10.074074074074076,
+      "sample_sd": 5.7554305614807175,
+      "values": [
+        7.160493827160494,
+        16.70370370370371,
+        6.358024691358025
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "method": "lpplusplus",
+      "mean": 3.6090534979423836,
+      "sample_sd": 2.0244404140382435,
+      "values": [
+        5.790123456790113,
+        3.246913580246911,
+        1.790123456790127
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "method": "lpplusplus",
+      "mean": 0.3361497229036085,
+      "sample_sd": 0.31589604162285423,
+      "values": [
+        0.6268738075769988,
+        0.0,
+        0.3815753611338266
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "method": "lpplusplus",
+      "mean": 0.2725538293812993,
+      "sample_sd": 0.8126493058531181,
+      "values": [
+        -0.5996184246388623,
+        0.40883074407194897,
+        1.0084491687108113
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "method": "lpplusplus",
+      "mean": 0.03022670025188745,
+      "sample_sd": 0.2409198428457095,
+      "values": [
+        -0.15617128463476604,
+        0.3022670025188887,
+        -0.055415617128460326
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "method": "lpplusplus",
+      "mean": 0.025188916876572875,
+      "sample_sd": 0.2787219384105383,
+      "values": [
+        0.3274559193954616,
+        -0.22166246851385552,
+        -0.03022670025188745
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "method": "proker",
+      "mean": 1.4775413711583951,
+      "sample_sd": 1.238317189110931,
+      "values": [
+        0.11820330969267445,
+        1.7730496453900741,
+        2.5413711583924368
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "method": "proker",
+      "mean": -0.374310480693462,
+      "sample_sd": 0.8386050691013773,
+      "values": [
+        -1.122931442080386,
+        0.5319148936170279,
+        -0.5319148936170279
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "method": "proker",
+      "mean": 1.843621399176958,
+      "sample_sd": 2.0698933957859267,
+      "values": [
+        -0.49382716049382225,
+        3.444444444444443,
+        2.580246913580254
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "method": "proker",
+      "mean": 1.4074074074074001,
+      "sample_sd": 2.4163493319237057,
+      "values": [
+        4.172839506172835,
+        0.3456790123456699,
+        -0.2962962962963047
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "method": "proker",
+      "mean": 1.935132188607246,
+      "sample_sd": 1.6792501281819914,
+      "values": [
+        3.84300899427636,
+        1.28100299809212,
+        0.6813845734532578
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "method": "proker",
+      "mean": 0.4088307440719537,
+      "sample_sd": 0.48219694775018346,
+      "values": [
+        0.3270645952575677,
+        -0.027255382938136563,
+        0.92668301989643
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "method": "proker",
+      "mean": 7.425692695214106,
+      "sample_sd": 0.6753448789174376,
+      "values": [
+        7.954659949622155,
+        7.657430730478595,
+        6.6649874055415665
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "method": "prolip",
+      "mean": 0.3743104806934596,
+      "sample_sd": 1.0774238702817458,
+      "values": [
+        -0.591016548463358,
+        1.5366430260047323,
+        0.17730496453900457
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "method": "prolip",
+      "mean": 0.33490937746256577,
+      "sample_sd": 0.8067610413492257,
+      "values": [
+        0.4728132387706836,
+        1.0638297872340416,
+        -0.5319148936170279
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "method": "prolip",
+      "mean": -0.4115226337448519,
+      "sample_sd": 1.0942711061115864,
+      "values": [
+        -0.13580246913579685,
+        0.518518518518519,
+        -1.6172839506172778
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "method": "prolip",
+      "mean": 0.8148148148148143,
+      "sample_sd": 0.2286451750302776,
+      "values": [
+        0.5802469135802397,
+        0.827160493827165,
+        1.037037037037038
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "method": "prolip",
+      "mean": 0.081766148814386,
+      "sample_sd": 0.23287009390344496,
+      "values": [
+        0.3270645952575535,
+        -0.1362769146906544,
+        0.054510765876258915
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "method": "prolip",
+      "mean": 0.6359589352230396,
+      "sample_sd": 0.5587907446054952,
+      "values": [
+        1.28100299809212,
+        0.3270645952575677,
+        0.29980921231943114
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "method": "prolip",
+      "mean": 0.6213266162888308,
+      "sample_sd": 0.1498123051532636,
+      "values": [
+        0.4483627204030114,
+        0.7103274559193977,
+        0.7052896725440831
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "method": "prolip",
+      "mean": 0.4315701091519723,
+      "sample_sd": 0.24162111006275797,
+      "values": [
+        0.6901763224181394,
+        0.21158690176321215,
+        0.3929471032745653
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "method": "lora_rank",
+      "mean": 1.3790386130811687,
+      "sample_sd": 0.9608942788224764,
+      "values": [
+        1.713947990543737,
+        2.1276595744680904,
+        0.295508274231679
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "method": "lora_rank",
+      "mean": 1.3593380614657207,
+      "sample_sd": 0.827423167848707,
+      "values": [
+        1.3593380614657207,
+        2.1867612293144276,
+        0.5319148936170137
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "method": "lora_rank",
+      "mean": 10.905349794238687,
+      "sample_sd": 10.732111854807327,
+      "values": [
+        17.419753086419753,
+        16.777777777777786,
+        -1.481481481481481
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "method": "lora_rank",
+      "mean": 1.4156378600823036,
+      "sample_sd": 0.5074259305941852,
+      "values": [
+        1.0864197530864175,
+        1.1604938271604937,
+        2.0
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "method": "lora_rank",
+      "mean": -0.03634051058417261,
+      "sample_sd": 0.015735902676195377,
+      "values": [
+        -0.027255382938136563,
+        -0.054510765876258915,
+        -0.027255382938122352
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "method": "lora_rank",
+      "mean": 0.2362133187971267,
+      "sample_sd": 0.4691832954910596,
+      "values": [
+        -0.29980921231943114,
+        0.43608612701008553,
+        0.5723630417007257
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "method": "lora_rank",
+      "mean": 0.6162888329135162,
+      "sample_sd": 0.17190090153801446,
+      "values": [
+        0.41813602015112394,
+        0.7052896725440831,
+        0.7254408060453414
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "method": "lora_rank",
+      "mean": 0.6565910999160375,
+      "sample_sd": 0.10499075756400086,
+      "values": [
+        0.6347607052896791,
+        0.7707808564231726,
+        0.5642317380352608
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "method": "lora_param",
+      "mean": 1.4381402679275037,
+      "sample_sd": 1.0191108870273895,
+      "values": [
+        0.5319148936170208,
+        2.5413711583924368,
+        1.2411347517730533
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "method": "lora_param",
+      "mean": 2.4231678486997574,
+      "sample_sd": 0.9765196005826446,
+      "values": [
+        3.0732860520094505,
+        2.895981087470446,
+        1.3002364066193763
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "method": "lora_param",
+      "mean": 9.958847736625517,
+      "sample_sd": 7.210260573796299,
+      "values": [
+        17.69135802469136,
+        3.4197530864197603,
+        8.76543209876543
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "method": "lora_param",
+      "mean": 2.5679012345678984,
+      "sample_sd": 0.17151165419073927,
+      "values": [
+        2.76543209876543,
+        2.481481481481481,
+        2.456790123456784
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "method": "lora_param",
+      "mean": 0.18170255292086304,
+      "sample_sd": 0.244286902148609,
+      "values": [
+        0.4633415099482079,
+        0.027255382938122352,
+        0.054510765876258915
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "method": "lora_param",
+      "mean": 0.2907240846733856,
+      "sample_sd": 0.3818996921410677,
+      "values": [
+        -0.1362769146906544,
+        0.40883074407194897,
+        0.5996184246388623
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "method": "lora_param",
+      "mean": 1.1519731318219943,
+      "sample_sd": 0.5496111608964827,
+      "values": [
+        1.783375314861459,
+        0.8916876574307224,
+        0.7808564231738018
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "method": "lora_param",
+      "mean": 1.0377833753148593,
+      "sample_sd": 0.19255934361326416,
+      "values": [
+        1.2594458438287148,
+        0.9420654911838682,
+        0.9118387909319949
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "method": "svd",
+      "mean": 16.489361702127663,
+      "sample_sd": 1.5366430260047288,
+      "values": [
+        14.952718676122934,
+        16.48936170212766,
+        18.026004728132392
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "method": "svd",
+      "mean": 24.310480693459414,
+      "sample_sd": 0.7690788532680529,
+      "values": [
+        24.349881796690298,
+        25.059101654846337,
+        23.522458628841605
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "method": "svd",
+      "mean": 11.584362139917696,
+      "sample_sd": 1.0310181989894125,
+      "values": [
+        11.71604938271605,
+        10.493827160493822,
+        12.543209876543216
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "method": "svd",
+      "mean": 16.864197530864192,
+      "sample_sd": 0.36183582443834517,
+      "values": [
+        16.456790123456784,
+        17.148148148148152,
+        16.987654320987644
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "method": "svd",
+      "mean": 0.7358953393295214,
+      "sample_sd": 0.4585065097100233,
+      "values": [
+        0.3815753611338266,
+        0.5723630417007399,
+        1.2537476151539977
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "method": "svd",
+      "mean": 1.0811301898791659,
+      "sample_sd": 0.5745220951671549,
+      "values": [
+        0.7631507222676532,
+        0.7358953393295167,
+        1.744344508040328
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "method": "svd",
+      "mean": 6.213266162888331,
+      "sample_sd": 0.47724412095741325,
+      "values": [
+        6.4735516372795985,
+        6.503778337531486,
+        5.662468513853909
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "method": "svd",
+      "mean": 9.694374475230896,
+      "sample_sd": 0.1819423439903568,
+      "values": [
+        9.884130982367765,
+        9.677581863979839,
+        9.521410579345087
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "method": "comp_k2",
+      "mean": 13.041765169424748,
+      "sample_sd": 0.4435906323560927,
+      "values": [
+        13.47517730496454,
+        12.58865248226951,
+        13.061465721040193
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "method": "comp_k2",
+      "mean": 16.489361702127656,
+      "sample_sd": 1.407314527162023,
+      "values": [
+        15.957446808510632,
+        18.08510638297873,
+        15.425531914893611
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "method": "comp_k2",
+      "mean": 13.674897119341566,
+      "sample_sd": 3.855141309350897,
+      "values": [
+        14.629629629629633,
+        16.962962962962962,
+        9.432098765432102
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "method": "comp_k2",
+      "mean": 10.753086419753089,
+      "sample_sd": 1.640257153604186,
+      "values": [
+        10.037037037037038,
+        12.629629629629633,
+        9.592592592592595
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "method": "comp_k2",
+      "mean": 0.8085763604978666,
+      "sample_sd": 0.5567930751719569,
+      "values": [
+        1.4445352957208968,
+        0.5723630417007399,
+        0.4088307440719632
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "method": "comp_k2",
+      "mean": 1.453620423366947,
+      "sample_sd": 0.394340590791509,
+      "values": [
+        1.1992368492777388,
+        1.2537476151539835,
+        1.9078768056691189
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "method": "comp_k2",
+      "mean": 4.653232577665823,
+      "sample_sd": 0.21208609299581688,
+      "values": [
+        4.896725440806037,
+        4.554156171284632,
+        4.5088161209068005
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "method": "comp_k2",
+      "mean": 6.617968094038621,
+      "sample_sd": 0.18033106644713506,
+      "values": [
+        6.816120906801004,
+        6.57430730478589,
+        6.463476070528969
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "method": "lp",
+      "mean": 8.8849487785658,
+      "sample_sd": 1.0643768841008736,
+      "values": [
+        10.106382978723403,
+        8.392434988179673,
+        8.156028368794324
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "method": "lp",
+      "mean": 3.349093774625691,
+      "sample_sd": 0.5026536966971329,
+      "values": [
+        3.5460992907801483,
+        2.7777777777777715,
+        3.723404255319153
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "method": "lp",
+      "mean": 6.592592592592591,
+      "sample_sd": 2.807766788077176,
+      "values": [
+        7.358024691358025,
+        8.938271604938265,
+        3.481481481481481
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "method": "lp",
+      "mean": 2.3251028806584344,
+      "sample_sd": 0.09266115431437986,
+      "values": [
+        2.23456790123457,
+        2.3209876543209873,
+        2.419753086419746
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "method": "lp",
+      "mean": 10.057236304170075,
+      "sample_sd": 0.9457264416951431,
+      "values": [
+        9.566639411283731,
+        9.457617879531213,
+        11.147451621695282
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "method": "lp",
+      "mean": 3.052602889070594,
+      "sample_sd": 0.6286488195514168,
+      "values": [
+        2.5620059961842543,
+        2.834559825565549,
+        3.761242845461979
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "method": "lp",
+      "mean": 9.029387069689335,
+      "sample_sd": 0.6551120277904113,
+      "values": [
+        8.705289672544083,
+        9.783375314861459,
+        8.599496221662463
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "method": "lp",
+      "mean": 2.8211586901763233,
+      "sample_sd": 0.15730473547602922,
+      "values": [
+        2.695214105793454,
+        2.7707808564231726,
+        2.9974811083123427
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "method": "lpplusplus",
+      "mean": 1.7927501970055175,
+      "sample_sd": 0.37997047915654053,
+      "values": [
+        1.9503546099290787,
+        2.068557919621753,
+        1.3593380614657207
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "method": "lpplusplus",
+      "mean": 2.068557919621744,
+      "sample_sd": 0.3127365615915592,
+      "values": [
+        2.304964539007088,
+        1.7139479905437298,
+        2.1867612293144134
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "method": "lpplusplus",
+      "mean": 8.901234567901236,
+      "sample_sd": 4.992495511383485,
+      "values": [
+        13.358024691358025,
+        9.839506172839506,
+        3.5061728395061778
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "method": "lpplusplus",
+      "mean": 3.279835390946502,
+      "sample_sd": 1.0237488848347167,
+      "values": [
+        3.1604938271604937,
+        4.358024691358025,
+        2.3209876543209873
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "method": "lpplusplus",
+      "mean": 0.09085127646043152,
+      "sample_sd": 0.5042859666168069,
+      "values": [
+        0.5996184246388623,
+        0.08176614881439548,
+        -0.4088307440719632
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "method": "lpplusplus",
+      "mean": 0.2816389570273448,
+      "sample_sd": 0.2219822244548182,
+      "values": [
+        0.3815753611338266,
+        0.027255382938122352,
+        0.43608612701008553
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "method": "lpplusplus",
+      "mean": -0.1561712846347613,
+      "sample_sd": 0.07421118318718904,
+      "values": [
+        -0.07052896725440405,
+        -0.19647355163728264,
+        -0.20151133501259721
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "method": "lpplusplus",
+      "mean": -0.10243492863140109,
+      "sample_sd": 0.20949750023511016,
+      "values": [
+        -0.1863979848866535,
+        -0.25692695214105754,
+        0.13602015113350774
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "method": "proker",
+      "mean": 1.6548463356973997,
+      "sample_sd": 0.504964760361551,
+      "values": [
+        2.1867612293144134,
+        1.5957446808510696,
+        1.182033096926716
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "method": "proker",
+      "mean": 0.5713159968479147,
+      "sample_sd": 0.8652557626476629,
+      "values": [
+        -0.35460992907800915,
+        0.7092198581560325,
+        1.3593380614657207
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "method": "proker",
+      "mean": -2.2263374485596708,
+      "sample_sd": 1.6227094620015619,
+      "values": [
+        -0.3580246913580254,
+        -3.283950617283949,
+        -3.037037037037038
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "method": "proker",
+      "mean": -1.2510288065843678,
+      "sample_sd": 0.518714444661358,
+      "values": [
+        -1.2345679012345698,
+        -1.7777777777777857,
+        -0.7407407407407476
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "method": "proker",
+      "mean": 0.0635958935222997,
+      "sample_sd": 0.2647188568062792,
+      "values": [
+        0.35431997819569006,
+        0.0,
+        -0.16353229762879096
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "method": "proker",
+      "mean": -0.14536204233669045,
+      "sample_sd": 0.2675103454953337,
+      "values": [
+        0.16353229762879096,
+        -0.29980921231943114,
+        -0.29980921231943114
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "method": "proker",
+      "mean": 2.957178841309817,
+      "sample_sd": 0.224223809413282,
+      "values": [
+        3.0579345088161176,
+        3.113350125944578,
+        2.7002518891687544
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "method": "prolip",
+      "mean": 1.3396375098502677,
+      "sample_sd": 0.5949436119204701,
+      "values": [
+        0.7092198581560183,
+        1.4184397163120508,
+        1.8912529550827344
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "method": "prolip",
+      "mean": 0.5516154452324619,
+      "sample_sd": 0.6850015228807615,
+      "values": [
+        0.8865248226950371,
+        1.0047281323876973,
+        -0.2364066193853489
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "method": "prolip",
+      "mean": -2.0946502057613166,
+      "sample_sd": 3.0696912912016026,
+      "values": [
+        0.08641975308641747,
+        -0.7654320987654302,
+        -5.6049382716049365
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "method": "prolip",
+      "mean": -0.5679012345679079,
+      "sample_sd": 0.6332503013941824,
+      "values": [
+        -1.2962962962963047,
+        -0.14814814814815236,
+        -0.25925925925926663
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "method": "prolip",
+      "mean": 0.009085127646045521,
+      "sample_sd": 0.16428764713388005,
+      "values": [
+        0.027255382938136563,
+        0.16353229762879096,
+        -0.16353229762879096
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "method": "prolip",
+      "mean": -0.045425638230218134,
+      "sample_sd": 0.08761379813748366,
+      "values": [
+        -0.10902153175251783,
+        -0.08176614881439548,
+        0.054510765876258915
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "method": "prolip",
+      "mean": 0.330814441645676,
+      "sample_sd": 0.027745947341497,
+      "values": [
+        0.35768261964736325,
+        0.33249370277077617,
+        0.3022670025188887
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "method": "prolip",
+      "mean": 0.36943744752309254,
+      "sample_sd": 0.10204879666994433,
+      "values": [
+        0.33753148614609074,
+        0.48362720403022763,
+        0.2871536523929592
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "method": "lora_rank",
+      "mean": 1.2608353033884896,
+      "sample_sd": 0.5491473547977258,
+      "values": [
+        1.0047281323876973,
+        0.8865248226950371,
+        1.8912529550827344
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "method": "lora_rank",
+      "mean": 0.7683215130023626,
+      "sample_sd": 0.307101207015754,
+      "values": [
+        0.9456264775413672,
+        0.9456264775413672,
+        0.4137115839243535
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "method": "lora_rank",
+      "mean": 1.3909465020576164,
+      "sample_sd": 2.508827072656838,
+      "values": [
+        4.259259259259267,
+        -0.3950617283950635,
+        0.308641975308646
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "method": "lora_rank",
+      "mean": 1.2962962962962905,
+      "sample_sd": 0.7010997957778102,
+      "values": [
+        0.49382716049382225,
+        1.7901234567901128,
+        1.6049382716049365
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "method": "lora_rank",
+      "mean": 0.054510765876263655,
+      "sample_sd": 0.21287134575924735,
+      "values": [
+        0.1907876805669133,
+        0.16353229762879096,
+        -0.1907876805669133
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "method": "lora_rank",
+      "mean": 0.13627691469064965,
+      "sample_sd": 0.29980921231943825,
+      "values": [
+        0.1362769146906544,
+        -0.16353229762879096,
+        0.43608612701008553
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "method": "lora_rank",
+      "mean": 0.4517212426532353,
+      "sample_sd": 0.04944561499356715,
+      "values": [
+        0.42317380352645273,
+        0.42317380352645273,
+        0.5088161209068005
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "method": "lora_rank",
+      "mean": 0.8732157850545784,
+      "sample_sd": 0.7838948496038888,
+      "values": [
+        1.7783375314861445,
+        0.4282115869017673,
+        0.4130982367758236
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "method": "lora_param",
+      "mean": 1.8518518518518476,
+      "sample_sd": 1.2288786582939837,
+      "values": [
+        1.3593380614657207,
+        0.9456264775413672,
+        3.250591016548455
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "method": "lora_param",
+      "mean": 1.398739164696612,
+      "sample_sd": 0.6850015228807663,
+      "values": [
+        2.1867612293144276,
+        1.0638297872340416,
+        0.9456264775413672
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "method": "lora_param",
+      "mean": 6.288065843621401,
+      "sample_sd": 3.250369782659475,
+      "values": [
+        10.037037037037038,
+        4.567901234567898,
+        4.259259259259267
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "method": "lora_param",
+      "mean": 5.13168724279835,
+      "sample_sd": 0.4027669377157894,
+      "values": [
+        5.481481481481481,
+        5.222222222222214,
+        4.691358024691354
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "method": "lora_param",
+      "mean": 0.09993640410647704,
+      "sample_sd": 0.2473091230819768,
+      "values": [
+        0.3270645952575677,
+        0.1362769146906544,
+        -0.16353229762879096
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "method": "lora_param",
+      "mean": 0.08176614881439548,
+      "sample_sd": 0.11880345989481551,
+      "values": [
+        0.16353229762879096,
+        -0.054510765876258915,
+        0.1362769146906544
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "method": "lora_param",
+      "mean": 0.4937027707808568,
+      "sample_sd": 0.036327972548753494,
+      "values": [
+        0.46347607052896933,
+        0.48362720403022763,
+        0.5340050377833734
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "method": "lora_param",
+      "mean": 0.4718723761544936,
+      "sample_sd": 0.025356286936256325,
+      "values": [
+        0.4483627204030256,
+        0.49874055415617136,
+        0.4685138539042839
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "method": "svd",
+      "mean": 10.89440504334121,
+      "sample_sd": 0.3255065335275416,
+      "values": [
+        11.229314420803775,
+        10.579196217494093,
+        10.874704491725765
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "method": "svd",
+      "mean": 16.252955082742314,
+      "sample_sd": 0.7545594169505753,
+      "values": [
+        16.903073286052006,
+        15.425531914893611,
+        16.430260047281322
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "method": "svd",
+      "mean": 27.419753086419753,
+      "sample_sd": 1.9458842406020742,
+      "values": [
+        29.185185185185183,
+        25.33333333333333,
+        27.740740740740748
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "method": "svd",
+      "mean": 38.58024691358024,
+      "sample_sd": 0.33149929832339753,
+      "values": [
+        38.76543209876543,
+        38.197530864197525,
+        38.77777777777777
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "method": "svd",
+      "mean": 0.15444716998273597,
+      "sample_sd": 0.34511528869305935,
+      "values": [
+        0.5451076587626034,
+        -0.10902153175251783,
+        0.027255382938122352
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "method": "svd",
+      "mean": 0.09085127646043627,
+      "sample_sd": 0.29143299595431804,
+      "values": [
+        0.4088307440719632,
+        -0.16353229762879096,
+        0.027255382938136563
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "method": "svd",
+      "mean": 4.478589420654909,
+      "sample_sd": 0.061287279902250254,
+      "values": [
+        4.448362720403026,
+        4.549118387909317,
+        4.438287153652382
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "method": "svd",
+      "mean": 6.888329135180527,
+      "sample_sd": 0.07711813604167511,
+      "values": [
+        6.977329974811084,
+        6.8463476070529055,
+        6.841309823677591
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "method": "comp_k2",
+      "mean": 6.146572104018905,
+      "sample_sd": 2.2010903604652587,
+      "values": [
+        5.378250591016538,
+        4.432624113475171,
+        8.628841607565008
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "method": "comp_k2",
+      "mean": 7.092198581560282,
+      "sample_sd": 1.0945779655704608,
+      "values": [
+        8.215130023640668,
+        6.028368794326241,
+        7.033096926713938
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "method": "comp_k2",
+      "mean": 13.724279835390947,
+      "sample_sd": 3.0405814240087357,
+      "values": [
+        11.543209876543216,
+        17.197530864197525,
+        12.432098765432102
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "method": "comp_k2",
+      "mean": 14.399176954732502,
+      "sample_sd": 0.8105324554590247,
+      "values": [
+        15.308641975308632,
+        13.753086419753075,
+        14.135802469135797
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "method": "comp_k2",
+      "mean": 0.07268102116834523,
+      "sample_sd": 0.12290132877685044,
+      "values": [
+        0.08176614881439548,
+        -0.054510765876258915,
+        0.1907876805668991
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "method": "comp_k2",
+      "mean": 0.03634051058416787,
+      "sample_sd": 0.4260334001160532,
+      "values": [
+        0.49059689288634445,
+        -0.35431997819570427,
+        -0.027255382938136563
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "method": "comp_k2",
+      "mean": 2.661628883291352,
+      "sample_sd": 0.39722956521817326,
+      "values": [
+        3.0881612090680193,
+        2.5944584382871483,
+        2.3022670025188887
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "method": "comp_k2",
+      "mean": 3.65239294710328,
+      "sample_sd": 0.03146094709520425,
+      "values": [
+        3.687657430730482,
+        3.642317380352651,
+        3.6272040302267072
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "method": "comp_param",
+      "mean": 0.9850275807722634,
+      "sample_sd": 1.1825255081527897,
+      "values": [
+        2.1867612293144205,
+        0.9456264775413743,
+        -0.17730496453900457
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 4,
+      "method": "comp_rank",
+      "mean": 0.472813238770686,
+      "sample_sd": 1.0253753884691215,
+      "values": [
+        1.0047281323877115,
+        1.1229314420803789,
+        -0.7092198581560325
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "method": "comp_param",
+      "mean": 1.083530338849485,
+      "sample_sd": 0.4475105079432793,
+      "values": [
+        1.5957446808510554,
+        0.8865248226950371,
+        0.7683215130023626
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "shot": 16,
+      "method": "comp_rank",
+      "mean": 0.374310480693462,
+      "sample_sd": 0.26650412250725913,
+      "values": [
+        0.6501182033096882,
+        0.35460992907802336,
+        0.11820330969267445
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "method": "comp_param",
+      "mean": 6.547325102880663,
+      "sample_sd": 10.30506579007942,
+      "values": [
+        18.18518518518519,
+        2.8765432098765444,
+        -1.419753086419746
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 4,
+      "method": "comp_rank",
+      "mean": 0.3456790123456794,
+      "sample_sd": 1.3907943034076224,
+      "values": [
+        0.17283950617284916,
+        1.8148148148148096,
+        -0.9506172839506206
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "method": "comp_param",
+      "mean": 1.2839506172839446,
+      "sample_sd": 0.6119522830317902,
+      "values": [
+        0.5802469135802397,
+        1.5802469135802397,
+        1.691358024691354
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "eurosat",
+      "shot": 16,
+      "method": "comp_rank",
+      "mean": 0.9012345679012318,
+      "sample_sd": 0.19402757587039263,
+      "values": [
+        0.7654320987654302,
+        1.1234567901234556,
+        0.8148148148148096
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "method": "comp_param",
+      "mean": 0.14536204233669517,
+      "sample_sd": 0.13444761140136785,
+      "values": [
+        0.29980921231943114,
+        0.054510765876258915,
+        0.08176614881439548
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "method": "comp_rank",
+      "mean": 0.07268102116834523,
+      "sample_sd": 0.031471805352390754,
+      "values": [
+        0.10902153175251783,
+        0.054510765876258915,
+        0.054510765876258915
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "method": "comp_param",
+      "mean": 0.27255382938130407,
+      "sample_sd": 0.4503328329751486,
+      "values": [
+        -0.16353229762877675,
+        0.24529844644317222,
+        0.7358953393295167
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "method": "comp_rank",
+      "mean": 0.29980921231943114,
+      "sample_sd": 0.5091725726974451,
+      "values": [
+        -0.24529844644317222,
+        0.3815753611338266,
+        0.763150722267639
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "method": "comp_param",
+      "mean": 0.22166246851385077,
+      "sample_sd": 0.17931961441367286,
+      "values": [
+        0.4282115869017531,
+        0.13098236775817895,
+        0.10579345088162029
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 4,
+      "method": "comp_rank",
+      "mean": 0.047019311502936034,
+      "sample_sd": 0.2508964484972711,
+      "values": [
+        -0.1863979848866535,
+        0.015113350125943725,
+        0.31234256926951787
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "method": "comp_param",
+      "mean": 0.21326616288833122,
+      "sample_sd": 0.29898865895094473,
+      "values": [
+        0.408060453400509,
+        -0.13098236775819316,
+        0.36272040302267783
+      ]
+    },
+    {
+      "family": "clip",
+      "dataset": "sun397",
+      "shot": 16,
+      "method": "comp_rank",
+      "mean": 0.15617128463475657,
+      "sample_sd": 0.2808535992900024,
+      "values": [
+        0.3476070528967199,
+        -0.1662468513853952,
+        0.287153652392945
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "method": "comp_param",
+      "mean": 2.0882584712371917,
+      "sample_sd": 0.45139634505081866,
+      "values": [
+        2.1867612293144134,
+        2.4822695035461066,
+        1.5957446808510554
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 4,
+      "method": "comp_rank",
+      "mean": 2.048857368006305,
+      "sample_sd": 1.861780302810365,
+      "values": [
+        1.0638297872340416,
+        0.8865248226950371,
+        4.1962174940898365
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "method": "comp_param",
+      "mean": 3.7431048069345914,
+      "sample_sd": 0.3562478589445475,
+      "values": [
+        3.782505910165483,
+        3.3687943262411295,
+        4.078014184397162
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "dtd",
+      "shot": 16,
+      "method": "comp_rank",
+      "mean": 2.0685579196217483,
+      "sample_sd": 0.2364066193853418,
+      "values": [
+        2.304964539007088,
+        1.8321513002364043,
+        2.068557919621753
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "method": "comp_param",
+      "mean": 13.724279835390947,
+      "sample_sd": 3.0405814240087357,
+      "values": [
+        11.543209876543216,
+        17.197530864197525,
+        12.432098765432102
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 4,
+      "method": "comp_rank",
+      "mean": 7.193415637860085,
+      "sample_sd": 2.519557197257786,
+      "values": [
+        6.580246913580254,
+        9.962962962962962,
+        5.037037037037038
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "method": "comp_param",
+      "mean": 14.399176954732502,
+      "sample_sd": 0.8105324554590247,
+      "values": [
+        15.308641975308632,
+        13.753086419753075,
+        14.135802469135797
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "shot": 16,
+      "method": "comp_rank",
+      "mean": 4.382716049382708,
+      "sample_sd": 0.6401922055537875,
+      "values": [
+        4.2962962962962905,
+        3.7901234567901128,
+        5.061728395061721
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "method": "comp_param",
+      "mean": 0.0,
+      "sample_sd": 0.11880345989480247,
+      "values": [
+        0.054510765876258915,
+        -0.13627691469064018,
+        0.08176614881438127
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 4,
+      "method": "comp_rank",
+      "mean": -0.009085127646040784,
+      "sample_sd": 0.15011094432504937,
+      "values": [
+        0.1362769146906544,
+        -0.16353229762877675,
+        0.0
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "method": "comp_param",
+      "mean": -0.29980921231943586,
+      "sample_sd": 0.14422193028425503,
+      "values": [
+        -0.1907876805669133,
+        -0.4633415099482221,
+        -0.24529844644317222
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "oxford_pets",
+      "shot": 16,
+      "method": "comp_rank",
+      "mean": -0.027255382938131827,
+      "sample_sd": 0.34150896936881125,
+      "values": [
+        0.29980921231943114,
+        -0.3815753611338266,
+        0.0
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "method": "comp_param",
+      "mean": 0.38287153652392664,
+      "sample_sd": 0.10482948134350255,
+      "values": [
+        0.5037783375314859,
+        0.3274559193954616,
+        0.31738035264483244
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 4,
+      "method": "comp_rank",
+      "mean": 0.20486985726280219,
+      "sample_sd": 0.07236427011390627,
+      "values": [
+        0.287153652392945,
+        0.17632241813602434,
+        0.15113350125943725
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "method": "comp_param",
+      "mean": 0.7204030226700316,
+      "sample_sd": 0.1524709919437877,
+      "values": [
+        0.8413098236775767,
+        0.5491183879093313,
+        0.7707808564231868
+      ]
+    },
+    {
+      "family": "siglip2",
+      "dataset": "sun397",
+      "shot": 16,
+      "method": "comp_rank",
+      "mean": 0.4685138539042839,
+      "sample_sd": 0.1925593436132653,
+      "values": [
+        0.5642317380352608,
+        0.2468513853904284,
+        0.5944584382871625
+      ]
+    }
+  ],
+  "coordinate_numerics": [
+    {
+      "family": "clip",
+      "dataset": "dtd",
+      "K_condition": 86.89880995080102,
+      "solve_relative_residual_fp32": 2.0216093616909347e-06,
+      "fixed_denominator_logits_fp64_max_abs": 9.71445146547012e-17,
+      "fixed_denominator_loss_fp64_abs": 0.0,
+      "fixed_denominator_gradient_fp64_max_abs": 8.326672684688674e-17,
+      "compact_fixed_numerator_fp32_max_abs": 1.430511474609375e-06,
+      "b0_preserved": true
+    },
+    {
+      "family": "siglip2",
+      "dataset": "eurosat",
+      "K_condition": 15.170102846295036,
+      "solve_relative_residual_fp32": 3.0750194923712115e-07,
+      "fixed_denominator_logits_fp64_max_abs": 6.245004513516506e-17,
+      "fixed_denominator_loss_fp64_abs": 0.0,
+      "fixed_denominator_gradient_fp64_max_abs": 5.074066167232161e-17,
+      "compact_fixed_numerator_fp32_max_abs": 7.152557373046875e-07,
+      "b0_preserved": true
+    }
+  ]
+}
