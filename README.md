@@ -227,7 +227,7 @@ $$
 hA_UU^\top T_\Delta=hGR.
 $$
 
-R0 optimizes $A_U$ with penalty $\lVert A_U\rVert_F^2$. R1 optimizes $A_U$ with penalty $\lVert G\rVert_F^2$. R2 directly optimizes $G$ with that penalty and obtains $A_U$ by a linear solve. The random basis uses seed 8675309. Its native perpendicular score term is retained, and each model uses its actual dynamic denominator.
+R0 optimizes $A_U$ with penalty $\lVert A_U\rVert_F^2$. R1 optimizes $A_U$ with penalty $\lVert G\rVert_F^2$. R2 directly optimizes $G$ with that penalty and obtains $A_U$ by a linear solve. For each diagnostic task, one random basis generated with seed 8675309 is shared by R0–R2 across both shot counts and all three support seeds. Each model retains the native visual component perpendicular to $U$ and uses its actual dynamic normalization denominator.
 
 | Encoder | Dataset / shot | P0 | R0 | R1 | R2 |
 | --- | --- | ---: | ---: | ---: | ---: |
@@ -236,7 +236,7 @@ R0 optimizes $A_U$ with penalty $\lVert A_U\rVert_F^2$. R1 optimizes $A_U$ with 
 | SigLIP 2 Base/16 | EuroSAT / 4 | 76.36&nbsp;±&nbsp;2.26 | 62.25&nbsp;±&nbsp;3.57 | 67.16&nbsp;±&nbsp;3.60 | 72.26&nbsp;±&nbsp;0.65 |
 | SigLIP 2 Base/16 | EuroSAT / 16 | 87.71&nbsp;±&nbsp;0.52 | 67.60&nbsp;±&nbsp;1.30 | 79.65&nbsp;±&nbsp;1.54 | 81.95&nbsp;±&nbsp;1.86 |
 
-R1 improves upon R0 in the four setting means. R2 improves upon R1 on EuroSAT and decreases accuracy on DTD, indicating a setting-dependent effect of optimizer coordinates. P0 has the highest mean in each of these four comparisons. P0 preserves the visual component perpendicular to the task-text span; R2 can change that component, so their dynamic norms differ.
+R1 improves upon R0 in the four setting means. R2 improves upon R1 on EuroSAT and decreases accuracy on DTD, indicating a setting-dependent effect of optimizer coordinates. P0 has the highest mean in each of these four comparisons. R2 matches P0's centered unnormalized score parameterization and penalty form. Its coupled update perpendicular to the task-text span generally yields a different normalization denominator from P0, which preserves the native perpendicular component.
 
 ### Fixed-configuration coordinate diagnostics
 
