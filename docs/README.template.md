@@ -107,7 +107,7 @@ Final-step validation correct count selects one of the nine candidates. Ties pre
 
 ## Accuracy comparisons
 
-These tables reproduce the main comparison, including both LoRA configurations and all three Comp-E configurations. Values are test accuracy (%) as mean ± sample SD. Within each encoder/method group, the configuration with the highest equally weighted mean over the eight settings has a bold configuration label.
+The tables below report the full three-seed comparison, including all configurations shown in the paper's Table 1, SVD-E, and Comp-E with $k=2$. Values are test accuracy (%) reported as mean ± sample standard deviation over support seeds 1, 2, and 3. Additional sections provide coordinate controls, normalization and regularization analyses, adaptation-position comparisons, and paired accuracy differences. Within each encoder/method group, the configuration with the highest equally weighted mean over the eight settings has a bold configuration label.
 
 <!-- TABLE:accuracy -->
 
@@ -163,11 +163,11 @@ Both TextCoord and ProLIP achieve higher mean accuracy at the output interface t
 
 ## Paired accuracy differences
 
-Each entry is TextCoord minus the comparator in percentage points, paired by support seed and summarized as mean ± sample SD of the three differences. All main-table configurations are covered.
+Each entry is TextCoord minus the comparator in percentage points, paired by support seed and summarized as mean ± sample SD of the three differences. All configurations in the full comparison tables above are covered.
 
 <!-- TABLE:paired -->
 
-The [recorded results](data/paper_results.json) contain all 522 per-seed main-table accuracies, aggregate tables, paired differences and supporting controls. The [coordinate selection records](data/selected_coordinate_configs.json) give learning rates, penalties and validation counts for the 48 main coordinate-control fits.
+The [recorded results](data/paper_results.json) contain all 522 recorded per-seed accuracies for the full comparison, aggregate tables, paired differences and supporting controls. The [coordinate selection records](data/selected_coordinate_configs.json) give learning rates, penalties and validation counts for the 48 main coordinate-control fits.
 
 ## Baseline implementation details
 
@@ -275,7 +275,7 @@ Training reads support and validation caches. Test encoding and evaluation are s
 
 For SigLIP 2, use `--family siglip2`. Public checkpoints are downloaded to `--download-root`; `--checkpoint` accepts an existing CLIP `.pt` file or local SigLIP 2 directory. Batch size and CPU thread count are controlled by `--batch-size` and `--threads`. CUDA execution requires `--device cuda:0`.
 
-### Main comparisons and controls
+### Full comparisons and controls
 
 ```text
 python -m tasktext train --cache CACHE_DIRECTORY --methods p0 prolip lora_rank lora_param svd comp_k2 comp_rank comp_param lp lpplusplus proker --output OUTPUT_DIRECTORY --device cpu
@@ -307,7 +307,7 @@ python scripts/run_matrix.py --data-roots dataset_roots.json --work-dir outputs/
 python scripts/summarize_runs.py --input outputs/paper --output outputs/paper/summary.json
 ```
 
-The matrix includes main comparisons, selected and fixed coordinate controls, normalization/regularization variants and the four SigLIP 2 position settings. ProKeR tasks cover reported 4-shot SUN397 results; the unreported SUN397 16-shot configuration is available through the single-episode command. Identical Comp-E configurations on SigLIP 2 EuroSAT share a fitted model, with both table labels recorded.
+The matrix includes the full comparison set, selected and fixed coordinate controls, normalization/regularization variants and the four SigLIP 2 position settings. ProKeR tasks cover reported 4-shot SUN397 results; the unreported SUN397 16-shot configuration is available through the single-episode command. Identical Comp-E configurations on SigLIP 2 EuroSAT share a fitted model, with both table labels recorded.
 
 ### Files and numerical validation
 
