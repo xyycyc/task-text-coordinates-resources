@@ -1,14 +1,14 @@
 # Task-Text Coordinates for Normalized Few-Shot Vision-Language Adaptation
 
-P0 uses the fixed class texts to determine a visual adaptation space before fitting the support images. It retains the complete centered class-text span, learns a visual coordinate map in that span, and preserves the native perpendicular feature component in the normalized objective. This repository provides the parameter budgets, implementation, experimental settings and supporting analyses for the paper.
+TextCoord (Task-Text Coordinate Adaptation) uses the fixed class texts to determine a visual adaptation space before fitting the support images. It retains the complete centered class-text span, learns a visual coordinate map in that span, and preserves the native perpendicular feature component in the normalized objective. This repository provides the parameter budgets, implementation, experimental settings and supporting analyses for the paper.
 
-[Parameters](#parameter-budgets) · [P0](#p0-implementation) · [Protocol](#experimental-protocol) · [Results](#accuracy-comparisons) · [Analysis](#coordinate-and-normalization-analysis) · [Code](#running-the-code) · [Sources](#sources)
+[Parameters](#parameter-budgets) · [TextCoord](#textcoord-implementation) · [Protocol](#experimental-protocol) · [Results](#accuracy-comparisons) · [Analysis](#coordinate-and-normalization-analysis) · [Code](#running-the-code) · [Sources](#sources)
 
 ## Parameter budgets
 
 The tables count trainable scalars in the adaptation modules. Frozen encoders, class texts and subspace bases are excluded. Counts apply to both 4-shot and 16-shot settings.
 
-P0 trains **35,328 / 6,912 / 27,648 / 304,128** scalars for DTD / EuroSAT / Pets / SUN397 on either encoder. Its parameter ratio to the full ProLIP endpoint is $r/e$. The rank-9 SigLIP 2 EuroSAT configuration reduces 589,824 trainable parameters to 6,912, a **98.8% reduction**.
+TextCoord trains **35,328 / 6,912 / 27,648 / 304,128** scalars for DTD / EuroSAT / Pets / SUN397 on either encoder. Its parameter ratio to the full ProLIP endpoint is $r/e$. The rank-9 SigLIP 2 EuroSAT configuration reduces 589,824 trainable parameters to 6,912, a **98.8% reduction**.
 
 ### CLIP ViT-B/16
 
@@ -24,7 +24,7 @@ P0 trains **35,328 / 6,912 / 27,648 / 304,128** scalars for DTD / EuroSAT / Pets
 | Comp-E | *k = 2* | 2,496 | 2,496 | 2,496 | 2,496 |
 |  | *Rank* | 57,408 | 11,232 | 44,928 | 494,208 |
 |  | *Param.* | 34,944 | 7,488 | 27,456 | 304,512 |
-| **P0** | *Task-text* | 35,328 | 6,912 | 27,648 | 304,128 |
+| **TextCoord** | *Task-text* | 35,328 | 6,912 | 27,648 | 304,128 |
 
 ### SigLIP 2 Base/16
 
@@ -40,13 +40,13 @@ P0 trains **35,328 / 6,912 / 27,648 / 304,128** scalars for DTD / EuroSAT / Pets
 | Comp-E | *k = 2* | 7,616 | 7,616 | 7,616 | 7,616 |
 |  | *Rank* | 175,168 | 34,272 | 137,088 | 1,507,968 |
 |  | *Param.* | 34,272 | 7,616 | 26,656 | 304,640 |
-| **P0** | *Task-text* | 35,328 | 6,912 | 27,648 | 304,128 |
+| **TextCoord** | *Task-text* | 35,328 | 6,912 | 27,648 | 304,128 |
 
-For P0, ProLIP and LoRA, $d=768$, with $e=512$ for CLIP and $e=768$ for SigLIP 2. They adapt the CLIP visual projector or a residual on the complete SigLIP 2 visual output. SVD-E and Comp-E use the CLIP projector or the SigLIP 2 pooling-head FC2, whose dimensions $(d_c,e_c)$ are $(768,512)$ and $(3072,768)$.
+For TextCoord, ProLIP and LoRA, $d=768$, with $e=512$ for CLIP and $e=768$ for SigLIP 2. They adapt the CLIP visual projector or a residual on the complete SigLIP 2 visual output. SVD-E and Comp-E use the CLIP projector or the SigLIP 2 pooling-head FC2, whose dimensions $(d_c,e_c)$ are $(768,512)$ and $(3072,768)$.
 
 | Method | Trainable scalars | Learned quantities |
 | :-- | --: | :-- |
-| P0 | $dr$ | Coordinate map $A$ |
+| TextCoord | $dr$ | Coordinate map $A$ |
 | ProLIP | $de$ | Full endpoint increment |
 | LoRA | $k(d+e)$ | Both low-rank factors |
 | SVD-E | $\min(d_c,e_c)$ | Singular-value increments |
@@ -67,9 +67,9 @@ SUN397 16-shot ProKeR accuracy is unreported because the fit exceeds the evaluat
 
 ### Matched ranks and budgets
 
-Rank sets $k=r$. Param. selects the integer rank minimizing the absolute difference from the main-table P0 budget $dr$, with ties favoring smaller rank. A rank match and a parameter match define separate comparisons. Signed differences below are comparator count minus P0 count.
+Rank sets $k=r$. Param. selects the integer rank minimizing the absolute difference from the main-table TextCoord budget $dr$, with ties favoring smaller rank. A rank match and a parameter match define separate comparisons. Signed differences below are comparator count minus TextCoord count.
 
-| Encoder | Dataset | P0 / Rank r | LoRA Param. k | LoRA difference | Comp-E Param. k | Comp-E difference |
+| Encoder | Dataset | TextCoord / Rank r | LoRA Param. k | LoRA difference | Comp-E Param. k | Comp-E difference |
 | --- | --- | ---: | ---: | ---: | ---: | ---: |
 | CLIP ViT-B/16 | DTD | 46 | 28 | +512 | 28 | -384 |
 | CLIP ViT-B/16 | EuroSAT | 9 | 5 | -512 | 6 | +576 |
@@ -82,9 +82,9 @@ Rank sets $k=r$. Param. selects the integer rank minimizing the absolute differe
 
 Comp-E also reports $k=2$, with 2,496/7,616 trainable scalars on CLIP/SigLIP 2. For SigLIP 2 EuroSAT, $k=2$ and Param. specify the same configuration. Every Comp-E configuration excludes the leading sixteen left and right singular directions. The [machine-readable counts](data/parameter_budgets.json) contain all table entries.
 
-## P0 implementation
+## TextCoord implementation
 
-Let the unit-normalized class texts form $T\in\mathbb{R}^{e\times C}$, and let $T_\Delta$ denote their column-centered matrix. P0 uses an orthonormal basis $Q\in\mathbb{R}^{e\times r}$ for the complete column space of $T_\Delta$:
+Let the unit-normalized class texts form $T\in\mathbb{R}^{e\times C}$, and let $T_\Delta$ denote their column-centered matrix. TextCoord uses an orthonormal basis $Q\in\mathbb{R}^{e\times r}$ for the complete column space of $T_\Delta$:
 
 $$
 \Delta W=AQ^\top,\qquad z=z_0+hAQ^\top.
@@ -145,7 +145,7 @@ Endpoint methods use 300 FP32 Adam updates, epsilon $10^{-4}$, betas $(0.9,0.999
 | 0.0001 | $1/K$ |
 | 0.01 | $1/K$ |
 
-Final-step validation correct count selects one of the nine candidates. Ties prefer $(10^{-3},1/K)$, then a smaller learning rate, then a larger penalty. Models are fixed before test evaluation. P0, ProLIP, LoRA, SVD-E, Comp-E and the validation-selected coordinate controls use this protocol.
+Final-step validation correct count selects one of the nine candidates. Ties prefer $(10^{-3},1/K)$, then a smaller learning rate, then a larger penalty. Models are fixed before test evaluation. TextCoord, ProLIP, LoRA, SVD-E, Comp-E and the validation-selected coordinate controls use this protocol.
 
 ## Accuracy comparisons
 
@@ -165,7 +165,7 @@ These tables reproduce the main comparison, including both LoRA configurations a
 | Comp-E | *k = 2* | 50.87&nbsp;±&nbsp;1.70 | 67.61&nbsp;±&nbsp;4.25 | 91.42&nbsp;±&nbsp;0.46 | 68.13&nbsp;±&nbsp;0.39 |
 |  | ***Rank*** | 63.44&nbsp;±&nbsp;2.28 | 80.94&nbsp;±&nbsp;1.69 | 92.16&nbsp;±&nbsp;0.13 | 72.73&nbsp;±&nbsp;0.73 |
 |  | *Param.* | 62.92&nbsp;±&nbsp;2.58 | 74.74&nbsp;±&nbsp;10.94 | 92.09&nbsp;±&nbsp;0.13 | 72.56&nbsp;±&nbsp;0.40 |
-| P0 | *Task-text* | 63.91&nbsp;±&nbsp;1.40 | 81.29&nbsp;±&nbsp;0.65 | 92.23&nbsp;±&nbsp;0.14 | 72.78&nbsp;±&nbsp;0.49 |
+| TextCoord | *Task-text* | 63.91&nbsp;±&nbsp;1.40 | 81.29&nbsp;±&nbsp;0.65 | 92.23&nbsp;±&nbsp;0.14 | 72.78&nbsp;±&nbsp;0.49 |
 
 ### CLIP ViT-B/16: 16-shot
 
@@ -181,7 +181,7 @@ These tables reproduce the main comparison, including both LoRA configurations a
 | Comp-E | *k = 2* | 56.42&nbsp;±&nbsp;0.74 | 78.18&nbsp;±&nbsp;2.43 | 91.88&nbsp;±&nbsp;0.24 | 69.66&nbsp;±&nbsp;0.10 |
 |  | ***Rank*** | 72.54&nbsp;±&nbsp;0.83 | 88.03&nbsp;±&nbsp;1.09 | 93.03&nbsp;±&nbsp;0.35 | 76.12&nbsp;±&nbsp;0.19 |
 |  | *Param.* | 71.83&nbsp;±&nbsp;0.93 | 87.65&nbsp;±&nbsp;0.88 | 93.06&nbsp;±&nbsp;0.27 | 76.06&nbsp;±&nbsp;0.21 |
-| P0 | *Task-text* | 72.91&nbsp;±&nbsp;0.96 | 88.93&nbsp;±&nbsp;0.98 | 93.33&nbsp;±&nbsp;0.63 | 76.28&nbsp;±&nbsp;0.21 |
+| TextCoord | *Task-text* | 72.91&nbsp;±&nbsp;0.96 | 88.93&nbsp;±&nbsp;0.98 | 93.33&nbsp;±&nbsp;0.63 | 76.28&nbsp;±&nbsp;0.21 |
 
 ### SigLIP 2 Base/16: 4-shot
 
@@ -197,7 +197,7 @@ These tables reproduce the main comparison, including both LoRA configurations a
 | Comp-E | *k = 2* | 68.68&nbsp;±&nbsp;1.86 | 62.63&nbsp;±&nbsp;5.24 | 94.89&nbsp;±&nbsp;0.29 | 74.61&nbsp;±&nbsp;0.23 |
 |  | ***Rank*** | 72.77&nbsp;±&nbsp;1.67 | 69.16&nbsp;±&nbsp;4.44 | 94.98&nbsp;±&nbsp;0.17 | 77.07&nbsp;±&nbsp;0.10 |
 |  | *Param.* | 72.73&nbsp;±&nbsp;1.13 | 62.63&nbsp;±&nbsp;5.24 | 94.97&nbsp;±&nbsp;0.25 | 76.89&nbsp;±&nbsp;0.08 |
-| P0 | *Task-text* | 74.82&nbsp;±&nbsp;0.77 | 76.36&nbsp;±&nbsp;2.26 | 94.97&nbsp;±&nbsp;0.25 | 77.27&nbsp;±&nbsp;0.17 |
+| TextCoord | *Task-text* | 74.82&nbsp;±&nbsp;0.77 | 76.36&nbsp;±&nbsp;2.26 | 94.97&nbsp;±&nbsp;0.25 | 77.27&nbsp;±&nbsp;0.17 |
 
 ### SigLIP 2 Base/16: 16-shot
 
@@ -213,9 +213,9 @@ These tables reproduce the main comparison, including both LoRA configurations a
 | Comp-E | *k = 2* | 73.70&nbsp;±&nbsp;0.54 | 73.31&nbsp;±&nbsp;0.99 | 95.05&nbsp;±&nbsp;0.32 | 76.30&nbsp;±&nbsp;0.05 |
 |  | ***Rank*** | 78.72&nbsp;±&nbsp;0.62 | 83.33&nbsp;±&nbsp;0.16 | 95.11&nbsp;±&nbsp;0.23 | 79.48&nbsp;±&nbsp;0.18 |
 |  | *Param.* | 77.05&nbsp;±&nbsp;0.54 | 73.31&nbsp;±&nbsp;0.99 | 95.38&nbsp;±&nbsp;0.07 | 79.23&nbsp;±&nbsp;0.12 |
-| P0 | *Task-text* | 80.79&nbsp;±&nbsp;0.82 | 87.71&nbsp;±&nbsp;0.52 | 95.08&nbsp;±&nbsp;0.11 | 79.95&nbsp;±&nbsp;0.08 |
+| TextCoord | *Task-text* | 80.79&nbsp;±&nbsp;0.82 | 87.71&nbsp;±&nbsp;0.52 | 95.08&nbsp;±&nbsp;0.11 | 79.95&nbsp;±&nbsp;0.08 |
 
-Across the sixteen settings, P0 exceeds Comp-E Rank and Param. by 1.19 and 2.84 percentage points on average. On the shared CLIP projector, P0 exceeds SVD-E and Comp-E $k=2$ in all eight setting means. The SigLIP 2 spectral comparisons include adaptation location as part of the complete configuration: FC2 for SVD-E/Comp-E and the output residual for P0.
+Across the sixteen settings, TextCoord exceeds Comp-E Rank and Param. by 1.19 and 2.84 percentage points on average. On the shared CLIP projector, TextCoord exceeds SVD-E and Comp-E $k=2$ in all eight setting means. The SigLIP 2 spectral comparisons include adaptation location as part of the complete configuration: FC2 for SVD-E/Comp-E and the output residual for TextCoord.
 
 ## Coordinate and normalization analysis
 
@@ -229,20 +229,20 @@ $$
 
 R0 optimizes $A_U$ with penalty $\lVert A_U\rVert_F^2$. R1 optimizes $A_U$ with penalty $\lVert G\rVert_F^2$. R2 directly optimizes $G$ with that penalty and obtains $A_U$ by a linear solve. For each diagnostic task, one random basis generated with seed 8675309 is shared by R0–R2 across both shot counts and all three support seeds. Each model retains the native visual component perpendicular to $U$ and uses its actual dynamic normalization denominator.
 
-| Encoder | Dataset / shot | P0 | R0 | R1 | R2 |
+| Encoder | Dataset / shot | TextCoord | R0 | R1 | R2 |
 | --- | --- | ---: | ---: | ---: | ---: |
 | CLIP ViT-B/16 | DTD / 4 | 63.91&nbsp;±&nbsp;1.40 | 62.27&nbsp;±&nbsp;1.24 | 62.81&nbsp;±&nbsp;1.21 | 62.37&nbsp;±&nbsp;0.30 |
 | CLIP ViT-B/16 | DTD / 16 | 72.91&nbsp;±&nbsp;0.96 | 70.41&nbsp;±&nbsp;0.57 | 70.78&nbsp;±&nbsp;0.44 | 68.79&nbsp;±&nbsp;0.67 |
 | SigLIP 2 Base/16 | EuroSAT / 4 | 76.36&nbsp;±&nbsp;2.26 | 62.25&nbsp;±&nbsp;3.57 | 67.16&nbsp;±&nbsp;3.60 | 72.26&nbsp;±&nbsp;0.65 |
 | SigLIP 2 Base/16 | EuroSAT / 16 | 87.71&nbsp;±&nbsp;0.52 | 67.60&nbsp;±&nbsp;1.30 | 79.65&nbsp;±&nbsp;1.54 | 81.95&nbsp;±&nbsp;1.86 |
 
-R1 improves upon R0 in the four setting means. R2 improves upon R1 on EuroSAT and decreases accuracy on DTD, indicating a setting-dependent effect of optimizer coordinates. P0 has the highest mean in each of these four comparisons. R2 matches P0's centered unnormalized score parameterization and penalty form. Its coupled update perpendicular to the task-text span generally yields a different normalization denominator from P0, which preserves the native perpendicular component.
+R1 improves upon R0 in the four setting means. R2 improves upon R1 on EuroSAT and decreases accuracy on DTD, indicating a setting-dependent effect of optimizer coordinates. TextCoord has the highest mean in each of these four comparisons. R2 matches TextCoord's centered unnormalized score parameterization and penalty form. Its coupled update perpendicular to the task-text span generally yields a different normalization denominator from TextCoord, which preserves the native perpendicular component.
 
 ### Fixed-configuration coordinate diagnostics
 
 These diagnostics fix the learning rate to $10^{-3}$ and $\lambda=1/K$ for all four methods, with 300 updates. This controlled configuration distinguishes them from the validation-selected table above.
 
-| Encoder | Dataset / shot | P0 | R0 | R1 | R2 |
+| Encoder | Dataset / shot | TextCoord | R0 | R1 | R2 |
 | --- | --- | ---: | ---: | ---: | ---: |
 | CLIP ViT-B/16 | DTD / 4 | 64.18&nbsp;±&nbsp;1.39 | 55.93&nbsp;±&nbsp;0.71 | 61.94&nbsp;±&nbsp;1.05 | 61.39&nbsp;±&nbsp;0.68 |
 | CLIP ViT-B/16 | DTD / 16 | 73.11&nbsp;±&nbsp;0.52 | 65.07&nbsp;±&nbsp;0.52 | 70.27&nbsp;±&nbsp;0.24 | 68.40&nbsp;±&nbsp;0.80 |
@@ -255,18 +255,18 @@ The fixed-configuration results show the same direction of improvement from R0 t
 
 D uses the current adapted feature norm; F fixes the denominator to $\lVert z_0\rVert_2$ for each image or view. Disp. uses $\lambda\lVert A\rVert_F^2$. CI uses $\lambda\lVert AR\rVert_F^2/\gamma$, where $\gamma=\lVert R\rVert_F^2/r$. All entries use the nine-candidate validation search.
 
-| Encoder | Dataset / shot | P0: D/Disp. | D/CI | F/CI | F/Disp. | Random |
+| Encoder | Dataset / shot | TextCoord: D/Disp. | D/CI | F/CI | F/Disp. | Random |
 | --- | --- | ---: | ---: | ---: | ---: | ---: |
 | CLIP ViT-B/16 | DTD / 4 | 63.91&nbsp;±&nbsp;1.40 | 64.20&nbsp;±&nbsp;1.21 | 63.55&nbsp;±&nbsp;2.13 | 63.83&nbsp;±&nbsp;1.08 | 62.27&nbsp;±&nbsp;1.24 |
 | CLIP ViT-B/16 | DTD / 16 | 72.91&nbsp;±&nbsp;0.96 | 73.38&nbsp;±&nbsp;0.36 | 73.15&nbsp;±&nbsp;0.42 | 73.17&nbsp;±&nbsp;0.56 | 70.41&nbsp;±&nbsp;0.57 |
 | SigLIP 2 Base/16 | EuroSAT / 4 | 76.36&nbsp;±&nbsp;2.26 | 76.23&nbsp;±&nbsp;1.38 | 76.79&nbsp;±&nbsp;0.24 | 75.43&nbsp;±&nbsp;1.30 | 62.25&nbsp;±&nbsp;3.57 |
 | SigLIP 2 Base/16 | EuroSAT / 16 | 87.71&nbsp;±&nbsp;0.52 | 87.13&nbsp;±&nbsp;0.30 | 87.35&nbsp;±&nbsp;0.99 | 87.43&nbsp;±&nbsp;0.67 | 67.60&nbsp;±&nbsp;1.30 |
 
-The best normalization/regularization variant varies across these settings. All text-coordinate variants exceed the random-coordinate reference in the four setting means. P0 combines normalized prediction with displacement regularization, matching the minimum-displacement interpretation of the method.
+The best normalization/regularization variant varies across these settings. All text-coordinate variants exceed the random-coordinate reference in the four setting means. TextCoord combines normalized prediction with displacement regularization, matching the minimum-displacement interpretation of the method.
 
 ### Algebraic checks
 
-With a fixed denominator, R2 and P0 agree in centered logits, loss and gradients when written in aligned coordinates. These checks use the actual task bases and FP64 arithmetic; the solve residual is measured in FP32.
+With a fixed denominator, R2 and TextCoord agree in centered logits, loss and gradients when written in aligned coordinates. These checks use the actual task bases and FP64 arithmetic; the solve residual is measured in FP32.
 
 | Encoder / task | FP32 solve relative residual | FP64 logit max error | FP64 loss error | FP64 gradient max error |
 | --- | ---: | ---: | ---: | ---: |
@@ -277,20 +277,20 @@ The source package includes CPU tests of compact versus explicit probabilities, 
 
 ## Adaptation-position analysis
 
-This comparison evaluates P0 and ProLIP at the SigLIP 2 output and FC2 interfaces on DTD and EuroSAT, with both shot counts, seeds 1/2/3 and validation selection. At FC2, $z=z_0+h\Delta W$ retains the complete native bias and residual in $z_0$.
+This comparison evaluates TextCoord and ProLIP at the SigLIP 2 output and FC2 interfaces on DTD and EuroSAT, with both shot counts, seeds 1/2/3 and validation selection. At FC2, $z=z_0+h\Delta W$ retains the complete native bias and residual in $z_0$.
 
-| Encoder | Dataset / shot | P0 output | ProLIP output | P0 FC2 | ProLIP FC2 |
+| Encoder | Dataset / shot | TextCoord output | ProLIP output | TextCoord FC2 | ProLIP FC2 |
 | --- | --- | ---: | ---: | ---: | ---: |
 | SigLIP 2 Base/16 | DTD / 4 | 74.82&nbsp;±&nbsp;0.77 | 73.48&nbsp;±&nbsp;1.08 | 73.23&nbsp;±&nbsp;1.92 | 72.71&nbsp;±&nbsp;1.39 |
 | SigLIP 2 Base/16 | DTD / 16 | 80.79&nbsp;±&nbsp;0.82 | 80.24&nbsp;±&nbsp;1.31 | 79.35&nbsp;±&nbsp;0.55 | 78.49&nbsp;±&nbsp;0.52 |
 | SigLIP 2 Base/16 | EuroSAT / 4 | 76.36&nbsp;±&nbsp;2.26 | 78.45&nbsp;±&nbsp;3.69 | 69.12&nbsp;±&nbsp;3.27 | 70.96&nbsp;±&nbsp;2.17 |
 | SigLIP 2 Base/16 | EuroSAT / 16 | 87.71&nbsp;±&nbsp;0.52 | 88.28&nbsp;±&nbsp;0.73 | 84.17&nbsp;±&nbsp;1.30 | 84.57&nbsp;±&nbsp;0.64 |
 
-Both P0 and ProLIP achieve higher mean accuracy at the output interface than at FC2 in all four settings. This supports the output interface used by the main SigLIP 2 configuration. Same-interface ProLIP/LoRA comparisons examine parameterization within that choice.
+Both TextCoord and ProLIP achieve higher mean accuracy at the output interface than at FC2 in all four settings. This supports the output interface used by the main SigLIP 2 configuration. Same-interface ProLIP/LoRA comparisons examine parameterization within that choice.
 
 ## Paired accuracy differences
 
-Each entry is P0 minus the comparator in percentage points, paired by support seed and summarized as mean ± sample SD of the three differences. All main-table configurations are covered.
+Each entry is TextCoord minus the comparator in percentage points, paired by support seed and summarized as mean ± sample SD of the three differences. All main-table configurations are covered.
 
 ### CLIP ViT-B/16: 4-shot
 
@@ -358,7 +358,7 @@ The [recorded results](data/paper_results.json) contain all 522 per-seed main-ta
 
 ### ProLIP and LoRA
 
-ProLIP learns a zero-initialized full increment at the P0 interface with penalty $\lambda\lVert \Delta W\rVert_F^2$.
+ProLIP learns a zero-initialized full increment at the TextCoord interface with penalty $\lambda\lVert \Delta W\rVert_F^2$.
 
 LoRA learns $\Delta W=BC$, with $B\in\mathbb{R}^{d\times k}$ and $C\in\mathbb{R}^{k\times e}$, scale one and dropout zero. Both factors are trained. $B$ starts at zero; $C$ is uniform on $[-1/\sqrt e,1/\sqrt e]$, seeded by the support seed. The penalty is $\lambda\lVert BC\rVert_F^2$.
 

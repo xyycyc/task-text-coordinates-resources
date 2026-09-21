@@ -11,7 +11,7 @@ METHODS = [
     ("lp", "LP", "Base"), ("lpplusplus", "LP", "LP++"), ("proker", "ProKeR", "Kernel solve"),
     ("prolip", "ProLIP", "Full"), ("lora_rank", "LoRA", "Rank"), ("lora_param", "LoRA", "Param."),
     ("svd", "SVD-E", "Singular values"), ("comp_k2", "Comp-E", "k = 2"),
-    ("comp_rank", "Comp-E", "Rank"), ("comp_param", "Comp-E", "Param."), ("p0", "P0", "Task-text"),
+    ("comp_rank", "Comp-E", "Rank"), ("comp_param", "Comp-E", "Param."), ("p0", "TextCoord", "Task-text"),
 ]
 
 
@@ -40,7 +40,7 @@ def render():
     for family, encoder in ENCODERS.items():
         rows, previous = [], None
         for method, title, variant in METHODS:
-            label = "" if title == previous else "**P0**" if title == "P0" else title
+            label = "" if title == previous else "**TextCoord**" if title == "TextCoord" else title
             values = [counts[family, ds, method]["parameters"] for ds in DATASETS]
             rows.append([label, "*" + variant + "*"] + ["Closed-form" if v is None else f"{v:,}" for v in values])
             previous = title
@@ -55,7 +55,7 @@ def render():
             rows.append([ENCODERS[family], title, p0["rank"], lo["rank"],
                          f"{lo['parameters']-p0['parameters']:+,}", co["rank"],
                          f"{co['parameters']-p0['parameters']:+,}"])
-    generated["matched"] = table(["Encoder", "Dataset", "P0 / Rank r", "LoRA Param. k",
+    generated["matched"] = table(["Encoder", "Dataset", "TextCoord / Rank r", "LoRA Param. k",
                                   "LoRA difference", "Comp-E Param. k", "Comp-E difference"], rows)
     for key, signed in (("main", False), ("paired", True)):
         lookup = {(x["family"], x["dataset"], x["shot"], x["method"]): x for x in results[key]}
@@ -84,13 +84,13 @@ def render():
         generated["paired" if signed else "accuracy"] = "\n\n".join(blocks)
 
     specs = [
-        ("selected_coordinates", "selected_coordinates", ["p0", "r0", "r1", "r2"], ["P0", "R0", "R1", "R2"]),
-        ("fixed_coordinates", "fixed_coordinates", ["p0", "r0", "r1", "r2"], ["P0", "R0", "R1", "R2"]),
+        ("selected_coordinates", "selected_coordinates", ["p0", "r0", "r1", "r2"], ["TextCoord", "R0", "R1", "R2"]),
+        ("fixed_coordinates", "fixed_coordinates", ["p0", "r0", "r1", "r2"], ["TextCoord", "R0", "R1", "R2"]),
         ("normalization", "normalization_regularization",
          ["p0", "dynamic_ci", "fixed_ci", "fixed_disp", "r0"],
-         ["P0: D/Disp.", "D/CI", "F/CI", "F/Disp.", "Random"]),
+         ["TextCoord: D/Disp.", "D/CI", "F/CI", "F/Disp.", "Random"]),
         ("position", "position", ["p0_output", "prolip_output", "p0_fc2", "prolip_fc2"],
-         ["P0 output", "ProLIP output", "P0 FC2", "ProLIP FC2"]),
+         ["TextCoord output", "ProLIP output", "TextCoord FC2", "ProLIP FC2"]),
     ]
     ds_names = dict(zip(DATASETS, DATASET_NAMES))
     for label, source, keys, headers in specs:

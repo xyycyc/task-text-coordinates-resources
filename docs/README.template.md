@@ -1,22 +1,22 @@
 # Task-Text Coordinates for Normalized Few-Shot Vision-Language Adaptation
 
-P0 uses the fixed class texts to determine a visual adaptation space before fitting the support images. It retains the complete centered class-text span, learns a visual coordinate map in that span, and preserves the native perpendicular feature component in the normalized objective. This repository provides the parameter budgets, implementation, experimental settings and supporting analyses for the paper.
+TextCoord (Task-Text Coordinate Adaptation) uses the fixed class texts to determine a visual adaptation space before fitting the support images. It retains the complete centered class-text span, learns a visual coordinate map in that span, and preserves the native perpendicular feature component in the normalized objective. This repository provides the parameter budgets, implementation, experimental settings and supporting analyses for the paper.
 
-[Parameters](#parameter-budgets) · [P0](#p0-implementation) · [Protocol](#experimental-protocol) · [Results](#accuracy-comparisons) · [Analysis](#coordinate-and-normalization-analysis) · [Code](#running-the-code) · [Sources](#sources)
+[Parameters](#parameter-budgets) · [TextCoord](#textcoord-implementation) · [Protocol](#experimental-protocol) · [Results](#accuracy-comparisons) · [Analysis](#coordinate-and-normalization-analysis) · [Code](#running-the-code) · [Sources](#sources)
 
 ## Parameter budgets
 
 The tables count trainable scalars in the adaptation modules. Frozen encoders, class texts and subspace bases are excluded. Counts apply to both 4-shot and 16-shot settings.
 
-P0 trains **35,328 / 6,912 / 27,648 / 304,128** scalars for DTD / EuroSAT / Pets / SUN397 on either encoder. Its parameter ratio to the full ProLIP endpoint is $r/e$. The rank-9 SigLIP 2 EuroSAT configuration reduces 589,824 trainable parameters to 6,912, a **98.8% reduction**.
+TextCoord trains **35,328 / 6,912 / 27,648 / 304,128** scalars for DTD / EuroSAT / Pets / SUN397 on either encoder. Its parameter ratio to the full ProLIP endpoint is $r/e$. The rank-9 SigLIP 2 EuroSAT configuration reduces 589,824 trainable parameters to 6,912, a **98.8% reduction**.
 
 <!-- TABLE:parameters -->
 
-For P0, ProLIP and LoRA, $d=768$, with $e=512$ for CLIP and $e=768$ for SigLIP 2. They adapt the CLIP visual projector or a residual on the complete SigLIP 2 visual output. SVD-E and Comp-E use the CLIP projector or the SigLIP 2 pooling-head FC2, whose dimensions $(d_c,e_c)$ are $(768,512)$ and $(3072,768)$.
+For TextCoord, ProLIP and LoRA, $d=768$, with $e=512$ for CLIP and $e=768$ for SigLIP 2. They adapt the CLIP visual projector or a residual on the complete SigLIP 2 visual output. SVD-E and Comp-E use the CLIP projector or the SigLIP 2 pooling-head FC2, whose dimensions $(d_c,e_c)$ are $(768,512)$ and $(3072,768)$.
 
 | Method | Trainable scalars | Learned quantities |
 | :-- | --: | :-- |
-| P0 | $dr$ | Coordinate map $A$ |
+| TextCoord | $dr$ | Coordinate map $A$ |
 | ProLIP | $de$ | Full endpoint increment |
 | LoRA | $k(d+e)$ | Both low-rank factors |
 | SVD-E | $\min(d_c,e_c)$ | Singular-value increments |
@@ -34,15 +34,15 @@ SUN397 16-shot ProKeR accuracy is unreported because the fit exceeds the evaluat
 
 ### Matched ranks and budgets
 
-Rank sets $k=r$. Param. selects the integer rank minimizing the absolute difference from the main-table P0 budget $dr$, with ties favoring smaller rank. A rank match and a parameter match define separate comparisons. Signed differences below are comparator count minus P0 count.
+Rank sets $k=r$. Param. selects the integer rank minimizing the absolute difference from the main-table TextCoord budget $dr$, with ties favoring smaller rank. A rank match and a parameter match define separate comparisons. Signed differences below are comparator count minus TextCoord count.
 
 <!-- TABLE:matched -->
 
 Comp-E also reports $k=2$, with 2,496/7,616 trainable scalars on CLIP/SigLIP 2. For SigLIP 2 EuroSAT, $k=2$ and Param. specify the same configuration. Every Comp-E configuration excludes the leading sixteen left and right singular directions. The [machine-readable counts](data/parameter_budgets.json) contain all table entries.
 
-## P0 implementation
+## TextCoord implementation
 
-Let the unit-normalized class texts form $T\in\mathbb{R}^{e\times C}$, and let $T_\Delta$ denote their column-centered matrix. P0 uses an orthonormal basis $Q\in\mathbb{R}^{e\times r}$ for the complete column space of $T_\Delta$:
+Let the unit-normalized class texts form $T\in\mathbb{R}^{e\times C}$, and let $T_\Delta$ denote their column-centered matrix. TextCoord uses an orthonormal basis $Q\in\mathbb{R}^{e\times r}$ for the complete column space of $T_\Delta$:
 
 $$
 \Delta W=AQ^\top,\qquad z=z_0+hAQ^\top.
@@ -103,7 +103,7 @@ Endpoint methods use 300 FP32 Adam updates, epsilon $10^{-4}$, betas $(0.9,0.999
 | 0.0001 | $1/K$ |
 | 0.01 | $1/K$ |
 
-Final-step validation correct count selects one of the nine candidates. Ties prefer $(10^{-3},1/K)$, then a smaller learning rate, then a larger penalty. Models are fixed before test evaluation. P0, ProLIP, LoRA, SVD-E, Comp-E and the validation-selected coordinate controls use this protocol.
+Final-step validation correct count selects one of the nine candidates. Ties prefer $(10^{-3},1/K)$, then a smaller learning rate, then a larger penalty. Models are fixed before test evaluation. TextCoord, ProLIP, LoRA, SVD-E, Comp-E and the validation-selected coordinate controls use this protocol.
 
 ## Accuracy comparisons
 
@@ -111,7 +111,7 @@ These tables reproduce the main comparison, including both LoRA configurations a
 
 <!-- TABLE:accuracy -->
 
-Across the sixteen settings, P0 exceeds Comp-E Rank and Param. by 1.19 and 2.84 percentage points on average. On the shared CLIP projector, P0 exceeds SVD-E and Comp-E $k=2$ in all eight setting means. The SigLIP 2 spectral comparisons include adaptation location as part of the complete configuration: FC2 for SVD-E/Comp-E and the output residual for P0.
+Across the sixteen settings, TextCoord exceeds Comp-E Rank and Param. by 1.19 and 2.84 percentage points on average. On the shared CLIP projector, TextCoord exceeds SVD-E and Comp-E $k=2$ in all eight setting means. The SigLIP 2 spectral comparisons include adaptation location as part of the complete configuration: FC2 for SVD-E/Comp-E and the output residual for TextCoord.
 
 ## Coordinate and normalization analysis
 
@@ -127,7 +127,7 @@ R0 optimizes $A_U$ with penalty $\lVert A_U\rVert_F^2$. R1 optimizes $A_U$ with 
 
 <!-- TABLE:selected_coordinates -->
 
-R1 improves upon R0 in the four setting means. R2 improves upon R1 on EuroSAT and decreases accuracy on DTD, indicating a setting-dependent effect of optimizer coordinates. P0 has the highest mean in each of these four comparisons. R2 matches P0's centered unnormalized score parameterization and penalty form. Its coupled update perpendicular to the task-text span generally yields a different normalization denominator from P0, which preserves the native perpendicular component.
+R1 improves upon R0 in the four setting means. R2 improves upon R1 on EuroSAT and decreases accuracy on DTD, indicating a setting-dependent effect of optimizer coordinates. TextCoord has the highest mean in each of these four comparisons. R2 matches TextCoord's centered unnormalized score parameterization and penalty form. Its coupled update perpendicular to the task-text span generally yields a different normalization denominator from TextCoord, which preserves the native perpendicular component.
 
 ### Fixed-configuration coordinate diagnostics
 
@@ -143,11 +143,11 @@ D uses the current adapted feature norm; F fixes the denominator to $\lVert z_0\
 
 <!-- TABLE:normalization -->
 
-The best normalization/regularization variant varies across these settings. All text-coordinate variants exceed the random-coordinate reference in the four setting means. P0 combines normalized prediction with displacement regularization, matching the minimum-displacement interpretation of the method.
+The best normalization/regularization variant varies across these settings. All text-coordinate variants exceed the random-coordinate reference in the four setting means. TextCoord combines normalized prediction with displacement regularization, matching the minimum-displacement interpretation of the method.
 
 ### Algebraic checks
 
-With a fixed denominator, R2 and P0 agree in centered logits, loss and gradients when written in aligned coordinates. These checks use the actual task bases and FP64 arithmetic; the solve residual is measured in FP32.
+With a fixed denominator, R2 and TextCoord agree in centered logits, loss and gradients when written in aligned coordinates. These checks use the actual task bases and FP64 arithmetic; the solve residual is measured in FP32.
 
 <!-- TABLE:numerics -->
 
@@ -155,15 +155,15 @@ The source package includes CPU tests of compact versus explicit probabilities, 
 
 ## Adaptation-position analysis
 
-This comparison evaluates P0 and ProLIP at the SigLIP 2 output and FC2 interfaces on DTD and EuroSAT, with both shot counts, seeds 1/2/3 and validation selection. At FC2, $z=z_0+h\Delta W$ retains the complete native bias and residual in $z_0$.
+This comparison evaluates TextCoord and ProLIP at the SigLIP 2 output and FC2 interfaces on DTD and EuroSAT, with both shot counts, seeds 1/2/3 and validation selection. At FC2, $z=z_0+h\Delta W$ retains the complete native bias and residual in $z_0$.
 
 <!-- TABLE:position -->
 
-Both P0 and ProLIP achieve higher mean accuracy at the output interface than at FC2 in all four settings. This supports the output interface used by the main SigLIP 2 configuration. Same-interface ProLIP/LoRA comparisons examine parameterization within that choice.
+Both TextCoord and ProLIP achieve higher mean accuracy at the output interface than at FC2 in all four settings. This supports the output interface used by the main SigLIP 2 configuration. Same-interface ProLIP/LoRA comparisons examine parameterization within that choice.
 
 ## Paired accuracy differences
 
-Each entry is P0 minus the comparator in percentage points, paired by support seed and summarized as mean ± sample SD of the three differences. All main-table configurations are covered.
+Each entry is TextCoord minus the comparator in percentage points, paired by support seed and summarized as mean ± sample SD of the three differences. All main-table configurations are covered.
 
 <!-- TABLE:paired -->
 
@@ -173,7 +173,7 @@ The [recorded results](data/paper_results.json) contain all 522 per-seed main-ta
 
 ### ProLIP and LoRA
 
-ProLIP learns a zero-initialized full increment at the P0 interface with penalty $\lambda\lVert \Delta W\rVert_F^2$.
+ProLIP learns a zero-initialized full increment at the TextCoord interface with penalty $\lambda\lVert \Delta W\rVert_F^2$.
 
 LoRA learns $\Delta W=BC$, with $B\in\mathbb{R}^{d\times k}$ and $C\in\mathbb{R}^{k\times e}$, scale one and dropout zero. Both factors are trained. $B$ starts at zero; $C$ is uniform on $[-1/\sqrt e,1/\sqrt e]$, seeded by the support seed. The penalty is $\lambda\lVert BC\rVert_F^2$.
 
